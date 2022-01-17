@@ -13,6 +13,8 @@
 		74213AEA2793175B00596410 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74213AE92793175B00596410 /* Preview Assets.xcassets */; };
 		74213AF127940F9100596410 /* ConversationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74213AF027940F9100596410 /* ConversationView.swift */; };
 		74213AF52794194E00596410 /* CommunityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74213AF42794194E00596410 /* CommunityView.swift */; };
+		74213AF72795572400596410 /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74213AF62795572400596410 /* FilterView.swift */; };
+		74213AF92795668500596410 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74213AF82795668500596410 /* SearchBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		74213AE92793175B00596410 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		74213AF027940F9100596410 /* ConversationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationView.swift; sourceTree = "<group>"; };
 		74213AF42794194E00596410 /* CommunityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityView.swift; sourceTree = "<group>"; };
+		74213AF62795572400596410 /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
+		74213AF82795668500596410 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,8 @@
 				74213AE82793175B00596410 /* Preview Content */,
 				74213AF027940F9100596410 /* ConversationView.swift */,
 				74213AF42794194E00596410 /* CommunityView.swift */,
+				74213AF62795572400596410 /* FilterView.swift */,
+				74213AF82795668500596410 /* SearchBar.swift */,
 			);
 			path = Mandam;
 			sourceTree = "<group>";
@@ -146,7 +152,9 @@
 				74213AE52793175700596410 /* ContentView.swift in Sources */,
 				74213AE32793175700596410 /* MandamApp.swift in Sources */,
 				74213AF52794194E00596410 /* CommunityView.swift in Sources */,
+				74213AF72795572400596410 /* FilterView.swift in Sources */,
 				74213AF127940F9100596410 /* ConversationView.swift in Sources */,
+				74213AF92795668500596410 /* SearchBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
