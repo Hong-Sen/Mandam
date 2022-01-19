@@ -7,21 +7,27 @@
 
 import SwiftUI
 
+struct Conversation: Hashable{
+    var mainQ: String
+    var subQ: [String]
+}
+
 struct ConversationView: View {
     @State private var isShowFilter: Bool = false;
-    @State private var searchString : String = ""
-    @State private var isSearch : Bool = false;
-    private var conversationList : [String] = ["너의 MBTI가 무엇이니?", "올 때 뭐 타고 왔니?"]
+    @State private var searchString: String = ""
+    @State private var isSearch: Bool = false;
+    private var conversationList: [Conversation] = [Conversation(mainQ: "너의 MBTI가 무엇이니?", subQ: ["E/I = 외향적/내향적", "S/N = 감각형/직관형", "T/F = 사고형 / 감정형", "J/P = 판단형/인식형"]), Conversation(mainQ: "올 때 뭐 타고 왔니?", subQ: ["얼마나 걸렸어?", "막혔어?"])]
+    
     var body: some View {
         NavigationView {
             VStack {
                 SearchBar(isShowing: $isSearch, text: $searchString)
                 List{
-                    ForEach(conversationList.filter{$0.contains(searchString) || searchString == ""}, id:\.self){ item in
-                        Text(item)
+                    ForEach(conversationList, id:\.self) { i in
+                        ConversationRowView(question: i)
                     }
                 }
-                .listStyle(.plain)
+//                .listStyle(.plain)
             }
             .navigationTitle("대화하기")
             .navigationBarTitleDisplayMode(.inline)
