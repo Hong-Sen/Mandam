@@ -15,7 +15,7 @@ struct ConversationRowView: View {
         Button {
             isShowSubQ = !isShowSubQ
         } label: {
-            VStack {
+            VStack(alignment: .leading) {
                 HStack{
                     Text(question.mainQ)
                     Spacer()
@@ -23,7 +23,7 @@ struct ConversationRowView: View {
                 }
                 if isShowSubQ {
                     ConversationRowSubView(question: question)
-                        .frame(width: .infinity, height: 42*CGFloat(question.subQ.count), alignment: .center)
+                        .frame(width: .infinity, height: 42*CGFloat(question.subQ.count), alignment: .leading)
                     // 유연하게 크기 지정 (추후 변경)
                 }
             }
