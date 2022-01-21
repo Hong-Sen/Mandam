@@ -21,7 +21,7 @@ enum AgeCategory:String, CaseIterable {
     case fourties = "40대"
 }
 
-enum relationshipCategory:String, CaseIterable {
+enum RelationshipCategory:String, CaseIterable {
     case friend = "친구"
     case blindDate = "소개팅"
     case seniorsNJuniors = "선후배"
@@ -62,7 +62,7 @@ struct FilterView: View {
                         .padding(.vertical, 20)
                     
                     LazyVGrid(columns: columns, spacing: 15) {
-                        ForEach(relationshipCategory.allCases, id: \.self) { i in
+                        ForEach(RelationshipCategory.allCases, id: \.self) { i in
                             customCategory(text: i.rawValue)
                         }
                     }
