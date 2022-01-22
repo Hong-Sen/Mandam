@@ -18,6 +18,7 @@ struct ConversationRowView: View {
             VStack(alignment: .leading) {
                 HStack{
                     Text(question.mainQ)
+                        .bold()
                     Spacer()
                     Image(systemName: isShowSubQ ? "arrowtriangle.up.fill" : "arrowtriangle.down.fill")
                 }

@@ -16,7 +16,7 @@ struct SearchBar: View {
         Group {
             HStack{
                 if isShowing{
-                    TextField("Search...", text: $text)
+                    TextField("질문 검색", text: $text)
                         .padding(7)
                         .padding(.horizontal, 25)
                         .background(Color(.systemGray6))

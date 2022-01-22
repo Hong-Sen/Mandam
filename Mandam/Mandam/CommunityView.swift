@@ -47,7 +47,7 @@ struct CommunityView: View {
                 
                 List{
                     ForEach(opList.filter{$0.opinion.contains(searchString) || searchString == ""}, id:\.self) { i in
-                        CommunityRowView(op: OpinionList, index: i, isPressLike: false)
+                        CommunityRowView(op: i)
                             .listRowSeparator(.hidden)
                     }
                 }

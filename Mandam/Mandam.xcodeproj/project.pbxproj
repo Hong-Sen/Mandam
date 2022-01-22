@@ -19,6 +19,7 @@
 		74D036D52798496A002FF1F6 /* ConversationRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D036D42798496A002FF1F6 /* ConversationRowView.swift */; };
 		74D036D727984DF3002FF1F6 /* ConversationRowSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D036D627984DF3002FF1F6 /* ConversationRowSubView.swift */; };
 		74D036D9279A56CE002FF1F6 /* CommunityRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D036D8279A56CE002FF1F6 /* CommunityRowView.swift */; };
+		74D036DB279BF725002FF1F6 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D036DA279BF725002FF1F6 /* SettingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		74D036D42798496A002FF1F6 /* ConversationRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationRowView.swift; sourceTree = "<group>"; };
 		74D036D627984DF3002FF1F6 /* ConversationRowSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationRowSubView.swift; sourceTree = "<group>"; };
 		74D036D8279A56CE002FF1F6 /* CommunityRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityRowView.swift; sourceTree = "<group>"; };
+		74D036DA279BF725002FF1F6 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 				74D036D42798496A002FF1F6 /* ConversationRowView.swift */,
 				74D036D627984DF3002FF1F6 /* ConversationRowSubView.swift */,
 				74D036D8279A56CE002FF1F6 /* CommunityRowView.swift */,
+				74D036DA279BF725002FF1F6 /* SettingView.swift */,
 			);
 			path = Mandam;
 			sourceTree = "<group>";
@@ -171,6 +174,7 @@
 				74213AF127940F9100596410 /* ConversationView.swift in Sources */,
 				74D036D727984DF3002FF1F6 /* ConversationRowSubView.swift in Sources */,
 				74213AF92795668500596410 /* SearchBar.swift in Sources */,
+				74D036DB279BF725002FF1F6 /* SettingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

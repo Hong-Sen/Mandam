@@ -23,7 +23,7 @@ struct ConversationView: View {
             VStack {
                 SearchBar(isShowing: $isSearch, text: $searchString)
                 List{
-                    ForEach(conversationList.filter{$0.mainQ.contains(searchString) || searchString == ""}, id:\.self) { i in
+                    ForEach(conversationList.filter{$0.mainQ.contains(searchString.uppercased()) || searchString == ""}, id:\.self) { i in
                         ConversationRowView(question: i)
                     }
                 }

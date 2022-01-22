@@ -8,16 +8,16 @@
 import SwiftUI
 
 struct CommunityRowView: View {
-    @ObservedObject var op : OpinionList = OpinionList()
+//    @ObservedObject var op : OpinionList = OpinionList()
+    var op: Opinion = Opinion(age: .teenager, relationship: .friend, opinion: "너 mbti가 어떻게 돼?", like: 3)
     @State var isPressLike: Bool = false
-    var index: Int = 0
     
     var body: some View {
         VStack{
             HStack{
-                Text(op.opinionList[index].age.rawValue)
+                Text(op.age.rawValue)
                 Text(" / ")
-                Text(op.opinionList[index].relationship.rawValue)
+                Text(op.relationship.rawValue)
                 Spacer()
             }
             
@@ -25,16 +25,16 @@ struct CommunityRowView: View {
                 .frame(width: 10, height: 30, alignment: .center)
             
             HStack{
-                Text(op.opinionList[index].opinion)
-//                    .font(.system(weight: .bold))
+                Text(op.opinion.uppercased())
+                    .bold()
                 Spacer()
                 Button {
                     isPressLike = !isPressLike
-                    op.updateLikeCnt(day: op.opinionList[index].timestamp)
+//                    op.updateLikeCnt(day: op.opinionList[index].timestamp)
                 } label: {
                     Image(systemName: isPressLike ? "hand.thumbsup.fill" : "hand.thumbsup")
                 }
-                Text("\(op.opinionList[index].like)")
+                Text("\(op.like)")
 
             }
         }
