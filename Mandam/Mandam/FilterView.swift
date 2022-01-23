@@ -71,10 +71,6 @@ struct FilterView: View {
                 Spacer()
                     .frame(width: 0, height: .infinity, alignment: .top)
                 
-                if ageState == .teenager {
-                    Text("##")
-                }
-                
                 Button {
                     // 필터 적용 기능
                     isShowFilter = false

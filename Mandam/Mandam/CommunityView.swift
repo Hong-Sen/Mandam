@@ -16,7 +16,7 @@ struct Opinion: Hashable {
 }
 
 class OpinionList: ObservableObject {
-    var opinionList : [Opinion] = [Opinion(age: .teenager, relationship: .friend, opinion: "너 mbti가 어떻게 돼?", like: 1), Opinion(age: .Earlytwenties, relationship: .priesthood, opinion: "교수님, 언제부터 저희 과에 계셨나요?", like: 3)]
+    var opinionList : [Opinion] = [Opinion(age: .teenager, relationship: .friend, opinion: "너 mbti가 어떻게 돼?", like: 1), Opinion(age: .Earlytwenties, relationship: .priesthood, opinion: "교수님, 언제부터 저희 과에 계셨나요?", like: 3), Opinion(age: .teenager, relationship: .friend, opinion: "너 mbti가 어떻게 돼?", like: 1), Opinion(age: .Earlytwenties, relationship: .priesthood, opinion: "교수님, 언제부터 저희 과에 계셨나요?", like: 3), Opinion(age: .teenager, relationship: .friend, opinion: "너 mbti가 어떻게 돼?", like: 1), Opinion(age: .Earlytwenties, relationship: .priesthood, opinion: "교수님, 언제부터 저희 과에 계셨나요?", like: 3), Opinion(age: .teenager, relationship: .friend, opinion: "너 mbti가 어떻게 돼?", like: 1), Opinion(age: .Earlytwenties, relationship: .priesthood, opinion: "교수님, 언제부터 저희 과에 계셨나요?", like: 3), Opinion(age: .teenager, relationship: .friend, opinion: "너 mbti가 어떻게 돼?", like: 1), Opinion(age: .Earlytwenties, relationship: .priesthood, opinion: "교수님, 언제부터 저희 과에 계셨나요?", like: 3)]
     
     func getOpinion(index: Int) -> Opinion {
         return opinionList[index]
@@ -32,46 +32,69 @@ class OpinionList: ObservableObject {
 
 struct CommunityView: View {
     @State private var searchString: String = ""
-    @State private var isSearch: Bool = false;
+    @State private var isSearch: Bool = false
+    @State private var isShowAddOpinion: Bool = false
     var opList = OpinionList().opinionList
     
     var body: some View {
         NavigationView {
-            VStack {
-                SearchBar(isShowing: $isSearch, text: $searchString)
-                Text("새로운 대화법을 올려주세요!")
-                    .font(.system(size: 15))
-                    .foregroundColor(.gray)
-                
-                Spacer()
-                
-                List{
-                    ForEach(opList.filter{$0.opinion.contains(searchString) || searchString == ""}, id:\.self) { i in
-                        CommunityRowView(op: i)
-                            .listRowSeparator(.hidden)
-                    }
-                }
-                .listStyle(.plain)
-            }
-                .navigationTitle("커뮤니티")
-                .navigationBarTitleDisplayMode(.inline)
-                .toolbar {
-                    ToolbarItem(placement: .navigationBarTrailing) {
-                        Button {
-                            isSearch = !isSearch
-                        } label: {
-                            Image(systemName: "magnifyingglass")
-                        }
-                    }
-                    ToolbarItem(placement: .navigationBarTrailing) {
-                        Button {
-                            //
-                        } label: {
-                            Image(systemName: "person")
-                        }
-                    }
+            ZStack(alignment: .bottomTrailing) {
+                VStack {
+                    SearchBar(isShowing: $isSearch, text: $searchString)
+                    Text("새로운 대화법을 올려주세요!")
+                        .font(.system(size: 15))
+                        .foregroundColor(.gray)
                     
+                    Spacer()
+                    
+                    List{
+                        ForEach(opList.filter{$0.opinion.contains(searchString) || searchString == ""}, id:\.self) { i in
+                            CommunityRowView(op: i)
+                                .listRowSeparator(.hidden)
+                        }
+                    }
+                    .listStyle(.plain)
                 }
+                Button {
+                    isShowAddOpinion = true
+                } label: {
+                    Text("+")
+                        .font(.system(.largeTitle))
+                        .frame(width: 70, height: 60)
+                        .foregroundColor(Color.white)
+                        .padding(.bottom, 7)
+                }
+                .background(Color.blue)
+                .cornerRadius(38.5)
+                .padding()
+                .shadow(color: Color.black.opacity(0.3),
+                        radius: 3,
+                        x: 3,
+                        y: 3)
+                
+            }
+            .navigationTitle("커뮤니티")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button {
+                        isSearch = !isSearch
+                    } label: {
+                        Image(systemName: "magnifyingglass")
+                    }
+                }
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button {
+                        //
+                    } label: {
+                        Image(systemName: "person")
+                    }
+                    .fullScreenCover(isPresented: $isShowAddOpinion) {
+                        AddOpinionView(isShowAddOpinion: $isShowAddOpinion)
+                    }
+                }
+                
+            }
         }
     }
 }

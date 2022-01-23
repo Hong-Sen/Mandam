@@ -20,6 +20,7 @@
 		74D036D727984DF3002FF1F6 /* ConversationRowSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D036D627984DF3002FF1F6 /* ConversationRowSubView.swift */; };
 		74D036D9279A56CE002FF1F6 /* CommunityRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D036D8279A56CE002FF1F6 /* CommunityRowView.swift */; };
 		74D036DB279BF725002FF1F6 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D036DA279BF725002FF1F6 /* SettingView.swift */; };
+		74D036DD279C07DA002FF1F6 /* AddOpinionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D036DC279C07DA002FF1F6 /* AddOpinionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		74D036D627984DF3002FF1F6 /* ConversationRowSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationRowSubView.swift; sourceTree = "<group>"; };
 		74D036D8279A56CE002FF1F6 /* CommunityRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityRowView.swift; sourceTree = "<group>"; };
 		74D036DA279BF725002FF1F6 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		74D036DC279C07DA002FF1F6 /* AddOpinionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOpinionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				74D036D627984DF3002FF1F6 /* ConversationRowSubView.swift */,
 				74D036D8279A56CE002FF1F6 /* CommunityRowView.swift */,
 				74D036DA279BF725002FF1F6 /* SettingView.swift */,
+				74D036DC279C07DA002FF1F6 /* AddOpinionView.swift */,
 			);
 			path = Mandam;
 			sourceTree = "<group>";
@@ -167,6 +170,7 @@
 				74213AE52793175700596410 /* ContentView.swift in Sources */,
 				74D036D9279A56CE002FF1F6 /* CommunityRowView.swift in Sources */,
 				74B1681B279683F7002A8433 /* customCategory.swift in Sources */,
+				74D036DD279C07DA002FF1F6 /* AddOpinionView.swift in Sources */,
 				74D036D52798496A002FF1F6 /* ConversationRowView.swift in Sources */,
 				74213AE32793175700596410 /* MandamApp.swift in Sources */,
 				74213AF52794194E00596410 /* CommunityView.swift in Sources */,
