@@ -9,54 +9,77 @@ import SwiftUI
 
 struct AddOpinionView: View {
     @Binding var isShowAddOpinion: Bool
-    @State var text: String = "내용 입력"
+    @State var text: String = ""
     let columns = [GridItem(.flexible()),GridItem(.flexible()),GridItem(.flexible())]
     
     var body: some View {
         NavigationView {
-            VStack{
-                Group {
-                    Divider()
-                    VStack(alignment: .leading) {
-                        Text("나이")
-                            .font(.system(size: 20, weight: .heavy))
-                            .padding(.leading, 30)
-                        
-                        LazyVGrid(columns: columns, spacing: 15) {
-                            ForEach(AgeCategory.allCases, id: \.self) { i in
-                                customCategory(text: i.rawValue)
+            ScrollView {
+                VStack(alignment: .leading){
+                    Group {
+                        Divider()
+                        VStack(alignment: .leading) {
+                            Text("나이")
+                                .font(.system(size: 17, weight: .heavy))
+                                .padding(.leading, 30)
+                            
+                            LazyVGrid(columns: columns, spacing: 15) {
+                                ForEach(AgeCategory.allCases, id: \.self) { i in
+                                    customCategory(text: i.rawValue)
+                                }
                             }
+                            .padding(.bottom)
                         }
-                        .padding(.vertical)
-                    }
-                    
-                    Divider()
-                    
-                    VStack(alignment: .leading){
-                        Text("관계")
-                            .font(.system(size: 20, weight: .heavy))
-                            .padding(.leading, 30)
                         
-                        LazyVGrid(columns: columns, spacing: 15) {
-                            ForEach(RelationshipCategory.allCases, id: \.self) { i in
-                                customCategory(text: i.rawValue)
+                        Divider()
+                        
+                        VStack(alignment: .leading){
+                            Text("관계")
+                                .font(.system(size: 17, weight: .heavy))
+                                .padding(.leading, 30)
+                            
+                            LazyVGrid(columns: columns, spacing: 15) {
+                                ForEach(RelationshipCategory.allCases, id: \.self) { i in
+                                    customCategory(text: i.rawValue)
+                                }
                             }
+                            .padding(.bottom)
                         }
-                        .padding(.vertical)
+                        
+                        Divider()
+                        
+                        VStack(alignment: .leading) {
+                            Text("대화법을 작성해주세요.")
+                                .font(.system(size: 17, weight: .heavy))
+                                .padding(.leading, 30)
+                            
+                            TextEditor(text: $text)
+                                .frame(width: .infinity, height: 130, alignment: .center)
+                                .padding()
+                                .border(.gray)
+                                .padding(.horizontal)
+                        }
+                        .padding(.bottom, 10)
+                        
+                        Divider()
+                        
+                        VStack(alignment: .leading) {
+                            Text("글 작성시 유의사항\n")
+                                .font(.system(size: 17, weight: .heavy))
+                            
+                            Text("유의사항1")
+                            Text("유의사항2")
+                            Text("유의사항3")
+                        }
+                        .padding(.leading, 30)
+                        .foregroundColor(.gray)
+                        .padding(.bottom, 15)
+                        
+                        Divider()
                     }
-                    
-                    Divider()
-                    
-                    TextEditor(text: $text)
-                        .frame(width: .infinity, height: 150, alignment: .center)
-                        .padding()
-                    
-                    ZStack {
-                        Color.gray
-                        Text("가이드")
-                    }
-                    .padding(.bottom)
-                    
+                }
+                
+                VStack(alignment: .center){
                     Button {
                         // 업로드 기능 기능
                         isShowAddOpinion = false
@@ -67,6 +90,7 @@ struct AddOpinionView: View {
                             .padding(.vertical, 5)
                     }
                     .buttonStyle(.borderedProminent)
+                    .frame(width: .infinity, alignment: .center)
                 }
             }
             .navigationTitle("글 쓰기")

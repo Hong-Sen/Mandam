@@ -42,7 +42,7 @@ struct FilterView: View {
                     Text("나이")
                         .font(.system(size: 20, weight: .heavy))
                         .padding(.leading, 30)
-                        .padding(.vertical, 20)
+                        .padding(.vertical, 10)
                     
                     LazyVGrid(columns: columns, spacing: 15) {
                         ForEach(AgeCategory.allCases, id: \.self) { i in
@@ -59,7 +59,7 @@ struct FilterView: View {
                     Text("관계")
                         .font(.system(size: 20, weight: .heavy))
                         .padding(.leading, 30)
-                        .padding(.vertical, 20)
+                        .padding(.vertical, 10)
                     
                     LazyVGrid(columns: columns, spacing: 15) {
                         ForEach(RelationshipCategory.allCases, id: \.self) { i in

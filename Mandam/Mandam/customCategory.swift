@@ -20,7 +20,7 @@ struct customCategory: View {
         .padding(.vertical, 10)
         .overlay(
             RoundedRectangle(cornerRadius: 6)
-                .stroke(.black, lineWidth: 3)
+                .stroke(.black, lineWidth: 2)
         )
     }
 }
