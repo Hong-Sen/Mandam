@@ -14,68 +14,70 @@ struct AddOpinionView: View {
     
     var body: some View {
         NavigationView {
-            ScrollView {
+            ScrollView() {
                 VStack(alignment: .leading){
                     Group {
                         Divider()
+                            .padding(.bottom)
+                        
                         VStack(alignment: .leading) {
                             Text("나이")
-                                .font(.system(size: 17, weight: .heavy))
-                                .padding(.leading, 30)
+                                .font(.system(size: 16, weight: .bold))
+                                .padding(.leading, 35)
                             
                             LazyVGrid(columns: columns, spacing: 15) {
                                 ForEach(AgeCategory.allCases, id: \.self) { i in
                                     customCategory(text: i.rawValue)
                                 }
                             }
-                            .padding(.bottom)
                         }
                         
                         Divider()
+                            .padding(.vertical)
                         
                         VStack(alignment: .leading){
                             Text("관계")
-                                .font(.system(size: 17, weight: .heavy))
-                                .padding(.leading, 30)
+                                .font(.system(size: 16, weight: .bold))
+                                .padding(.leading, 35)
                             
                             LazyVGrid(columns: columns, spacing: 15) {
                                 ForEach(RelationshipCategory.allCases, id: \.self) { i in
                                     customCategory(text: i.rawValue)
                                 }
                             }
-                            .padding(.bottom)
                         }
                         
                         Divider()
+                            .padding(.vertical)
                         
                         VStack(alignment: .leading) {
                             Text("대화법을 작성해주세요.")
-                                .font(.system(size: 17, weight: .heavy))
-                                .padding(.leading, 30)
+                                .font(.system(size: 16, weight: .bold))
+                                .padding(.leading, 35)
                             
                             TextEditor(text: $text)
-                                .frame(width: .infinity, height: 130, alignment: .center)
+                                .frame(height: 130, alignment: .center)
                                 .padding()
                                 .border(.gray)
-                                .padding(.horizontal)
+                                .padding(.horizontal,30)
                         }
-                        .padding(.bottom, 10)
                         
                         Divider()
+                            .padding(.vertical)
                         
                         VStack(alignment: .leading) {
                             Text("글 작성시 유의사항\n")
-                                .font(.system(size: 17, weight: .heavy))
+                                .font(.system(size: 16, weight: .bold))
                             
                             Text("유의사항1")
                             Text("유의사항2")
                             Text("유의사항3")
                         }
-                        .padding(.leading, 30)
+                        .padding(.leading, 35)
                         .foregroundColor(.gray)
-                        .padding(.bottom, 15)
                         
                         Divider()
+                            .padding(.vertical)
                     }
                 }
                 
@@ -90,8 +92,8 @@ struct AddOpinionView: View {
                             .padding(.vertical, 5)
                     }
                     .buttonStyle(.borderedProminent)
-                    .frame(width: .infinity, alignment: .center)
                 }
+                .padding(.bottom)
             }
             .navigationTitle("글 쓰기")
             .navigationBarTitleDisplayMode(.inline)

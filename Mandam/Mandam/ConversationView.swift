@@ -25,6 +25,7 @@ struct ConversationView: View {
                 List{
                     ForEach(conversationList.filter{$0.mainQ.contains(searchString.uppercased()) || searchString == ""}, id:\.self) { i in
                         ConversationRowView(question: i)
+                            .buttonStyle(.plain)
                     }
                 }
 //                .listStyle(.plain)
@@ -51,6 +52,7 @@ struct ConversationView: View {
                 }
             }
         }
+        .navigationViewStyle(.stack)
     }
 }
 

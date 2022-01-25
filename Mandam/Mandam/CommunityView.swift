@@ -96,6 +96,7 @@ struct CommunityView: View {
                 
             }
         }
+        .navigationViewStyle(.stack)
     }
 }
 

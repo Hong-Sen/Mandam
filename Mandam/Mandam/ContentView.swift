@@ -8,6 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    init() {
+        UITabBar.appearance().backgroundColor = .white
+        }
+    
     var body: some View {
         TabView {
             ConversationView()
@@ -21,10 +26,8 @@ struct ContentView: View {
                     Image(systemName: "person.3")
                     Text("커뮤니티")
                 }
-                
         }
-       
-        
+        .accentColor(.black)
     }
 }
 

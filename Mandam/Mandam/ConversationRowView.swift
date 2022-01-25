@@ -20,7 +20,7 @@ struct ConversationRowView: View {
                     Text(question.mainQ)
                         .bold()
                     Spacer()
-                    Image(systemName: isShowSubQ ? "arrowtriangle.up.fill" : "arrowtriangle.down.fill")
+                    Image(systemName: isShowSubQ ? "chevron.up" : "chevron.down")
                 }
                 if isShowSubQ {
                     ConversationRowSubView(question: question)
