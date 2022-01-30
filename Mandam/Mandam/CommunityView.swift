@@ -75,6 +75,9 @@ struct CommunityView: View {
             }
             .navigationTitle("커뮤니티")
             .navigationBarTitleDisplayMode(.inline)
+            .fullScreenCover(isPresented: $isShowAddOpinion) {
+                AddOpinionView(isShowAddOpinion: $isShowAddOpinion)
+            }
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button {
@@ -84,21 +87,22 @@ struct CommunityView: View {
                     }
                 }
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    Button {
-                        //
+                    NavigationLink {
+                        SettingView()
                     } label: {
                         Image(systemName: "person")
                     }
-                    .fullScreenCover(isPresented: $isShowAddOpinion) {
-                        AddOpinionView(isShowAddOpinion: $isShowAddOpinion)
-                    }
                 }
-                
             }
+            
         }
-        .navigationViewStyle(.stack)
+        
     }
+    
 }
+//    .navigationViewStyle(.stack)
+
+
 
 struct CommunityView_Previews: PreviewProvider {
     static var previews: some View {

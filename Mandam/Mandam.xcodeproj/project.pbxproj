@@ -15,6 +15,7 @@
 		74213AF52794194E00596410 /* CommunityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74213AF42794194E00596410 /* CommunityView.swift */; };
 		74213AF72795572400596410 /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74213AF62795572400596410 /* FilterView.swift */; };
 		74213AF92795668500596410 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74213AF82795668500596410 /* SearchBar.swift */; };
+		743038AA27A66747006B05D5 /* FBButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743038A927A66747006B05D5 /* FBButton.swift */; };
 		74B1681B279683F7002A8433 /* customCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B1681A279683F7002A8433 /* customCategory.swift */; };
 		74C4631127A513170005852C /* FacebookLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 74C4631027A513170005852C /* FacebookLogin */; };
 		74C4631327A5266A0005852C /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C4631227A5266A0005852C /* LoginView.swift */; };
@@ -35,8 +36,10 @@
 		74213AF42794194E00596410 /* CommunityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityView.swift; sourceTree = "<group>"; };
 		74213AF62795572400596410 /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
 		74213AF82795668500596410 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		743038A927A66747006B05D5 /* FBButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBButton.swift; sourceTree = "<group>"; };
 		74B1681A279683F7002A8433 /* customCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customCategory.swift; sourceTree = "<group>"; };
 		74C4631227A5266A0005852C /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		74C4631427A65BAE0005852C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		74D036D42798496A002FF1F6 /* ConversationRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationRowView.swift; sourceTree = "<group>"; };
 		74D036D627984DF3002FF1F6 /* ConversationRowSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationRowSubView.swift; sourceTree = "<group>"; };
 		74D036D8279A56CE002FF1F6 /* CommunityRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityRowView.swift; sourceTree = "<group>"; };
@@ -75,6 +78,7 @@
 		74213AE12793175700596410 /* Mandam */ = {
 			isa = PBXGroup;
 			children = (
+				74C4631427A65BAE0005852C /* Info.plist */,
 				74213AE22793175700596410 /* MandamApp.swift */,
 				74213AE42793175700596410 /* ContentView.swift */,
 				74213AE62793175B00596410 /* Assets.xcassets */,
@@ -90,6 +94,7 @@
 				74D036DA279BF725002FF1F6 /* SettingView.swift */,
 				74D036DC279C07DA002FF1F6 /* AddOpinionView.swift */,
 				74C4631227A5266A0005852C /* LoginView.swift */,
+				743038A927A66747006B05D5 /* FBButton.swift */,
 			);
 			path = Mandam;
 			sourceTree = "<group>";
@@ -191,6 +196,7 @@
 				74213AF92795668500596410 /* SearchBar.swift in Sources */,
 				74D036DB279BF725002FF1F6 /* SettingView.swift in Sources */,
 				74C4631327A5266A0005852C /* LoginView.swift in Sources */,
+				743038AA27A66747006B05D5 /* FBButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,10 +330,14 @@
 				DEVELOPMENT_TEAM = WYMZZ4Z5Z5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Mandam/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSFileProviderDomainUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeRight UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -353,10 +363,14 @@
 				DEVELOPMENT_TEAM = WYMZZ4Z5Z5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Mandam/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSFileProviderDomainUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeRight UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -8,12 +8,18 @@
 import SwiftUI
 
 struct SettingView: View {
-    @State var isNotLogined: Bool = true
+    @State var isNotLogined: Bool = false
     var body: some View {
         VStack {
-            //
+            Button {
+                isNotLogined = true
+            } label: {
+                Text("show login view")
+            }
+            .buttonStyle(.borderedProminent)
+
         }.fullScreenCover(isPresented: $isNotLogined) {
-            SIgnUpView()
+            LoginView(isNotLogined: $isNotLogined)
         }
     }
 }
