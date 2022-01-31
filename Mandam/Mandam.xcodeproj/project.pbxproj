@@ -15,7 +15,7 @@
 		74213AF52794194E00596410 /* CommunityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74213AF42794194E00596410 /* CommunityView.swift */; };
 		74213AF72795572400596410 /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74213AF62795572400596410 /* FilterView.swift */; };
 		74213AF92795668500596410 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74213AF82795668500596410 /* SearchBar.swift */; };
-		743038AA27A66747006B05D5 /* FBButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743038A927A66747006B05D5 /* FBButton.swift */; };
+		743038AA27A66747006B05D5 /* FBLoginBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743038A927A66747006B05D5 /* FBLoginBtn.swift */; };
 		74B1681B279683F7002A8433 /* customCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B1681A279683F7002A8433 /* customCategory.swift */; };
 		74C4631127A513170005852C /* FacebookLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 74C4631027A513170005852C /* FacebookLogin */; };
 		74C4631327A5266A0005852C /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C4631227A5266A0005852C /* LoginView.swift */; };
@@ -36,7 +36,7 @@
 		74213AF42794194E00596410 /* CommunityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityView.swift; sourceTree = "<group>"; };
 		74213AF62795572400596410 /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
 		74213AF82795668500596410 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
-		743038A927A66747006B05D5 /* FBButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBButton.swift; sourceTree = "<group>"; };
+		743038A927A66747006B05D5 /* FBLoginBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBLoginBtn.swift; sourceTree = "<group>"; };
 		74B1681A279683F7002A8433 /* customCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customCategory.swift; sourceTree = "<group>"; };
 		74C4631227A5266A0005852C /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		74C4631427A65BAE0005852C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -94,7 +94,7 @@
 				74D036DA279BF725002FF1F6 /* SettingView.swift */,
 				74D036DC279C07DA002FF1F6 /* AddOpinionView.swift */,
 				74C4631227A5266A0005852C /* LoginView.swift */,
-				743038A927A66747006B05D5 /* FBButton.swift */,
+				743038A927A66747006B05D5 /* FBLoginBtn.swift */,
 			);
 			path = Mandam;
 			sourceTree = "<group>";
@@ -196,7 +196,7 @@
 				74213AF92795668500596410 /* SearchBar.swift in Sources */,
 				74D036DB279BF725002FF1F6 /* SettingView.swift in Sources */,
 				74C4631327A5266A0005852C /* LoginView.swift in Sources */,
-				743038AA27A66747006B05D5 /* FBButton.swift in Sources */,
+				743038AA27A66747006B05D5 /* FBLoginBtn.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
