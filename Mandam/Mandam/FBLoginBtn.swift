@@ -51,9 +51,9 @@ struct FBLoginBtn: View {
             .cornerRadius(50)
             .padding(.horizontal, 50)
             
-            Text(email)
-                .bold()
-            
+            // test용
+//            Text(email)
+//                .bold()
         }
     }
 }

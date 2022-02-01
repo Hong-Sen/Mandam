@@ -7,6 +7,9 @@
 
 import SwiftUI
 import FBSDKLoginKit
+import KakaoSDKAuth
+import KakaoSDKUser
+import Alamofire
 
 struct LoginView: View {
     @Binding var isNotLogined: Bool
@@ -18,6 +21,7 @@ struct LoginView: View {
                     .frame(width: 200, height: 200)
                 
                 // Kakao Login
+                KakaoLoginBtn()
                 
                 HStack {
                     VStack{

@@ -16,6 +16,12 @@
 		74213AF72795572400596410 /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74213AF62795572400596410 /* FilterView.swift */; };
 		74213AF92795668500596410 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74213AF82795668500596410 /* SearchBar.swift */; };
 		743038AA27A66747006B05D5 /* FBLoginBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743038A927A66747006B05D5 /* FBLoginBtn.swift */; };
+		743038AC27A8E744006B05D5 /* KakaoLoginBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743038AB27A8E744006B05D5 /* KakaoLoginBtn.swift */; };
+		743038B627A900B3006B05D5 /* KakaoSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 743038B527A900B3006B05D5 /* KakaoSDK */; };
+		743038B827A900B3006B05D5 /* KakaoSDKAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 743038B727A900B3006B05D5 /* KakaoSDKAuth */; };
+		743038BA27A900B3006B05D5 /* KakaoSDKCommon in Frameworks */ = {isa = PBXBuildFile; productRef = 743038B927A900B3006B05D5 /* KakaoSDKCommon */; };
+		743038BC27A900B3006B05D5 /* KakaoSDKUser in Frameworks */ = {isa = PBXBuildFile; productRef = 743038BB27A900B3006B05D5 /* KakaoSDKUser */; };
+		743038BF27A90ACB006B05D5 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 743038BE27A90ACB006B05D5 /* Alamofire */; };
 		74B1681B279683F7002A8433 /* customCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B1681A279683F7002A8433 /* customCategory.swift */; };
 		74C4631127A513170005852C /* FacebookLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 74C4631027A513170005852C /* FacebookLogin */; };
 		74C4631327A5266A0005852C /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C4631227A5266A0005852C /* LoginView.swift */; };
@@ -24,6 +30,7 @@
 		74D036D9279A56CE002FF1F6 /* CommunityRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D036D8279A56CE002FF1F6 /* CommunityRowView.swift */; };
 		74D036DB279BF725002FF1F6 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D036DA279BF725002FF1F6 /* SettingView.swift */; };
 		74D036DD279C07DA002FF1F6 /* AddOpinionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D036DC279C07DA002FF1F6 /* AddOpinionView.swift */; };
+		F22FC54E0CBB1EC5098384C3 /* Pods_Mandam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC58D078E0CA503F3C352DAD /* Pods_Mandam.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +44,7 @@
 		74213AF62795572400596410 /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
 		74213AF82795668500596410 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		743038A927A66747006B05D5 /* FBLoginBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBLoginBtn.swift; sourceTree = "<group>"; };
+		743038AB27A8E744006B05D5 /* KakaoLoginBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoLoginBtn.swift; sourceTree = "<group>"; };
 		74B1681A279683F7002A8433 /* customCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customCategory.swift; sourceTree = "<group>"; };
 		74C4631227A5266A0005852C /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		74C4631427A65BAE0005852C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -45,6 +53,9 @@
 		74D036D8279A56CE002FF1F6 /* CommunityRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityRowView.swift; sourceTree = "<group>"; };
 		74D036DA279BF725002FF1F6 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		74D036DC279C07DA002FF1F6 /* AddOpinionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOpinionView.swift; sourceTree = "<group>"; };
+		AC58D078E0CA503F3C352DAD /* Pods_Mandam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mandam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2B33A7B58E716CE2F269830 /* Pods-Mandam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mandam.release.xcconfig"; path = "Target Support Files/Pods-Mandam/Pods-Mandam.release.xcconfig"; sourceTree = "<group>"; };
+		FD7A1F651889A505E99C85F5 /* Pods-Mandam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mandam.debug.xcconfig"; path = "Target Support Files/Pods-Mandam/Pods-Mandam.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,17 +64,34 @@
 			buildActionMask = 2147483647;
 			files = (
 				74C4631127A513170005852C /* FacebookLogin in Frameworks */,
+				743038BF27A90ACB006B05D5 /* Alamofire in Frameworks */,
+				F22FC54E0CBB1EC5098384C3 /* Pods_Mandam.framework in Frameworks */,
+				743038BC27A900B3006B05D5 /* KakaoSDKUser in Frameworks */,
+				743038B627A900B3006B05D5 /* KakaoSDK in Frameworks */,
+				743038BA27A900B3006B05D5 /* KakaoSDKCommon in Frameworks */,
+				743038B827A900B3006B05D5 /* KakaoSDKAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		59CC6258D840EC1281A112A0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FD7A1F651889A505E99C85F5 /* Pods-Mandam.debug.xcconfig */,
+				D2B33A7B58E716CE2F269830 /* Pods-Mandam.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		74213AD62793175700596410 = {
 			isa = PBXGroup;
 			children = (
 				74213AE12793175700596410 /* Mandam */,
 				74213AE02793175700596410 /* Products */,
+				59CC6258D840EC1281A112A0 /* Pods */,
+				A9DB21E58936CD392517F7BF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,6 +123,7 @@
 				74D036DC279C07DA002FF1F6 /* AddOpinionView.swift */,
 				74C4631227A5266A0005852C /* LoginView.swift */,
 				743038A927A66747006B05D5 /* FBLoginBtn.swift */,
+				743038AB27A8E744006B05D5 /* KakaoLoginBtn.swift */,
 			);
 			path = Mandam;
 			sourceTree = "<group>";
@@ -107,6 +136,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		A9DB21E58936CD392517F7BF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AC58D078E0CA503F3C352DAD /* Pods_Mandam.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -114,9 +151,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 74213AED2793175B00596410 /* Build configuration list for PBXNativeTarget "Mandam" */;
 			buildPhases = (
+				06A5E7FBBAD20C5E4805D02C /* [CP] Check Pods Manifest.lock */,
 				74213ADB2793175700596410 /* Sources */,
 				74213ADC2793175700596410 /* Frameworks */,
 				74213ADD2793175700596410 /* Resources */,
+				DE3C9865E600FB0A5E3BDEDA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,6 +164,11 @@
 			name = Mandam;
 			packageProductDependencies = (
 				74C4631027A513170005852C /* FacebookLogin */,
+				743038B527A900B3006B05D5 /* KakaoSDK */,
+				743038B727A900B3006B05D5 /* KakaoSDKAuth */,
+				743038B927A900B3006B05D5 /* KakaoSDKCommon */,
+				743038BB27A900B3006B05D5 /* KakaoSDKUser */,
+				743038BE27A90ACB006B05D5 /* Alamofire */,
 			);
 			productName = Mandam;
 			productReference = 74213ADF2793175700596410 /* Mandam.app */;
@@ -156,6 +200,8 @@
 			mainGroup = 74213AD62793175700596410;
 			packageReferences = (
 				74C4630F27A513170005852C /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */,
+				743038B427A900B3006B05D5 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */,
+				743038BD27A90ACB006B05D5 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = 74213AE02793175700596410 /* Products */;
 			projectDirPath = "";
@@ -178,6 +224,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		06A5E7FBBAD20C5E4805D02C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Mandam-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE3C9865E600FB0A5E3BDEDA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Mandam/Pods-Mandam-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Mandam/Pods-Mandam-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Mandam/Pods-Mandam-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		74213ADB2793175700596410 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -196,6 +284,7 @@
 				74213AF92795668500596410 /* SearchBar.swift in Sources */,
 				74D036DB279BF725002FF1F6 /* SettingView.swift in Sources */,
 				74C4631327A5266A0005852C /* LoginView.swift in Sources */,
+				743038AC27A8E744006B05D5 /* KakaoLoginBtn.swift in Sources */,
 				743038AA27A66747006B05D5 /* FBLoginBtn.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -321,6 +410,7 @@
 		};
 		74213AEE2793175B00596410 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD7A1F651889A505E99C85F5 /* Pods-Mandam.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -354,6 +444,7 @@
 		};
 		74213AEF2793175B00596410 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2B33A7B58E716CE2F269830 /* Pods-Mandam.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -409,6 +500,22 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		743038B427A900B3006B05D5 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kakao/kakao-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		743038BD27A90ACB006B05D5 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 		74C4630F27A513170005852C /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/facebook/facebook-ios-sdk";
@@ -420,6 +527,31 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		743038B527A900B3006B05D5 /* KakaoSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 743038B427A900B3006B05D5 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDK;
+		};
+		743038B727A900B3006B05D5 /* KakaoSDKAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 743038B427A900B3006B05D5 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDKAuth;
+		};
+		743038B927A900B3006B05D5 /* KakaoSDKCommon */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 743038B427A900B3006B05D5 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDKCommon;
+		};
+		743038BB27A900B3006B05D5 /* KakaoSDKUser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 743038B427A900B3006B05D5 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDKUser;
+		};
+		743038BE27A90ACB006B05D5 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 743038BD27A90ACB006B05D5 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
 		74C4631027A513170005852C /* FacebookLogin */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 74C4630F27A513170005852C /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
