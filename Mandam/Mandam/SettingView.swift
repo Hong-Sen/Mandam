@@ -9,8 +9,21 @@ import SwiftUI
 
 struct SettingView: View {
     @State var isNotLogined: Bool = false
+    @State var name: String = "닉네임"
     var body: some View {
         VStack {
+            HStack {
+                Text("\(name) 님 안녕하세요!")
+                Spacer()
+                Button {
+                    //
+                } label: {
+                    Image(systemName: "pencil")
+                }
+
+            }
+            .padding()
+            
             Button {
                 isNotLogined = true
             } label: {
