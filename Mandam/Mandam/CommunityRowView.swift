@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct CommunityRowView: View {
-//    @ObservedObject var op : OpinionList = OpinionList()
+    //    @ObservedObject var op : OpinionList = OpinionList()
     var op: Opinion = Opinion(age: .teenager, relationship: .friend, opinion: "너 mbti가 어떻게 돼?", like: 3)
+    @State var writer: String = "홍세은"
     @State var isPressLike: Bool = false
     
     var body: some View {
@@ -19,6 +20,13 @@ struct CommunityRowView: View {
                 Text(" / ")
                 Text(op.relationship.rawValue)
                 Spacer()
+                Menu {
+                    Text("🙋🏻 작성자: \(writer)")
+                        .foregroundColor(.black)
+                    
+                } label: {
+                    Image(systemName: "info.circle")
+                }
             }
             
             Spacer()
@@ -30,12 +38,13 @@ struct CommunityRowView: View {
                 Spacer()
                 Button {
                     isPressLike = !isPressLike
-//                    op.updateLikeCnt(day: op.opinionList[index].timestamp)
+                    //                    op.updateLikeCnt(day: op.opinionList[index].timestamp)
                 } label: {
                     Image(systemName: isPressLike ? "hand.thumbsup.fill" : "hand.thumbsup")
                 }
+                .buttonStyle(.borderless)
                 Text("\(op.like)")
-
+                
             }
         }
         .padding()

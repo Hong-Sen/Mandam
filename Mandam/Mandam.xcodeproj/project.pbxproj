@@ -109,8 +109,6 @@
 				74C4631427A65BAE0005852C /* Info.plist */,
 				74213AE22793175700596410 /* MandamApp.swift */,
 				74213AE42793175700596410 /* ContentView.swift */,
-				74213AE62793175B00596410 /* Assets.xcassets */,
-				74213AE82793175B00596410 /* Preview Content */,
 				74213AF027940F9100596410 /* ConversationView.swift */,
 				74213AF42794194E00596410 /* CommunityView.swift */,
 				74213AF62795572400596410 /* FilterView.swift */,
@@ -124,6 +122,7 @@
 				74C4631227A5266A0005852C /* LoginView.swift */,
 				743038A927A66747006B05D5 /* FBLoginBtn.swift */,
 				743038AB27A8E744006B05D5 /* KakaoLoginBtn.swift */,
+				74213AE82793175B00596410 /* Preview Content */,
 			);
 			path = Mandam;
 			sourceTree = "<group>";
@@ -131,6 +130,7 @@
 		74213AE82793175B00596410 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				74213AE62793175B00596410 /* Assets.xcassets */,
 				74213AE92793175B00596410 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
