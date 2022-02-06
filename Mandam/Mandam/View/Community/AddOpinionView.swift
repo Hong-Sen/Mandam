@@ -25,12 +25,12 @@ struct AddOpinionView: View {
                                 .font(.system(size: 16, weight: .bold))
                                 .padding(.leading, 35)
                             
-                            LazyVGrid(columns: columns, spacing: 15) {
-                                ForEach(AgeCategory.allCases, id: \.self) { i in
-                                    customCategory(text: i.rawValue)
-                                }
-                            }
-                        }
+//                            LazyVGrid(columns: columns, spacing: 15) {
+//                                ForEach(AgeCategory.allCases, id: \.self) { i in
+//                                    customCategory(text: i.rawValue)
+//                                }
+//                            }
+//                        }
                         
                         Divider()
                             .padding(.vertical)
@@ -40,11 +40,11 @@ struct AddOpinionView: View {
                                 .font(.system(size: 16, weight: .bold))
                                 .padding(.leading, 35)
                             
-                            LazyVGrid(columns: columns, spacing: 15) {
-                                ForEach(RelationshipCategory.allCases, id: \.self) { i in
-                                    customCategory(text: i.rawValue)
-                                }
-                            }
+//                            LazyVGrid(columns: columns, spacing: 15) {
+//                                ForEach(RelationshipCategory.allCases, id: \.self) { i in
+//                                    customCategory(text: i.rawValue)
+//                                }
+//                            }
                         }
                         
                         Divider()
@@ -108,6 +108,7 @@ struct AddOpinionView: View {
             }
         }
     }
+}
 }
 
 struct AddOpinionView_Previews: PreviewProvider {

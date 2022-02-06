@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ConversationRowSubView: View {
-    var question: Conversation = Conversation(mainQ: "mainQ", subQ: ["subQ1", "subQ2", "subQ3","subQ4"])
+    var question: Conversation = Conversation(mainQ: "mainQ", subQ: ["subQ1", "subQ2", "subQ3","subQ4"], age: .teenager, relationship: .friend)
     var body: some View {
         List{
             ForEach(question.subQ, id: \.self){ i in

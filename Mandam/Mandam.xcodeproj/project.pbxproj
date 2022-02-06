@@ -22,7 +22,7 @@
 		743038BA27A900B3006B05D5 /* KakaoSDKCommon in Frameworks */ = {isa = PBXBuildFile; productRef = 743038B927A900B3006B05D5 /* KakaoSDKCommon */; };
 		743038BC27A900B3006B05D5 /* KakaoSDKUser in Frameworks */ = {isa = PBXBuildFile; productRef = 743038BB27A900B3006B05D5 /* KakaoSDKUser */; };
 		743038BF27A90ACB006B05D5 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 743038BE27A90ACB006B05D5 /* Alamofire */; };
-		74B1681B279683F7002A8433 /* customCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B1681A279683F7002A8433 /* customCategory.swift */; };
+		7440838E27AFFEB700A9AD12 /* SelectedFilters+Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7440838D27AFFEB700A9AD12 /* SelectedFilters+Enum.swift */; };
 		74C4631127A513170005852C /* FacebookLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 74C4631027A513170005852C /* FacebookLogin */; };
 		74C4631327A5266A0005852C /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C4631227A5266A0005852C /* LoginView.swift */; };
 		74D036D52798496A002FF1F6 /* ConversationRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D036D42798496A002FF1F6 /* ConversationRowView.swift */; };
@@ -45,7 +45,7 @@
 		74213AF82795668500596410 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		743038A927A66747006B05D5 /* FBLoginBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBLoginBtn.swift; sourceTree = "<group>"; };
 		743038AB27A8E744006B05D5 /* KakaoLoginBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoLoginBtn.swift; sourceTree = "<group>"; };
-		74B1681A279683F7002A8433 /* customCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customCategory.swift; sourceTree = "<group>"; };
+		7440838D27AFFEB700A9AD12 /* SelectedFilters+Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SelectedFilters+Enum.swift"; sourceTree = "<group>"; };
 		74C4631227A5266A0005852C /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		74C4631427A65BAE0005852C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		74D036D42798496A002FF1F6 /* ConversationRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationRowView.swift; sourceTree = "<group>"; };
@@ -106,22 +106,10 @@
 		74213AE12793175700596410 /* Mandam */ = {
 			isa = PBXGroup;
 			children = (
+				7440838B27AFFE6F00A9AD12 /* Model */,
 				74C4631427A65BAE0005852C /* Info.plist */,
 				74213AE22793175700596410 /* MandamApp.swift */,
-				74213AE42793175700596410 /* ContentView.swift */,
-				74213AF027940F9100596410 /* ConversationView.swift */,
-				74213AF42794194E00596410 /* CommunityView.swift */,
-				74213AF62795572400596410 /* FilterView.swift */,
-				74213AF82795668500596410 /* SearchBar.swift */,
-				74B1681A279683F7002A8433 /* customCategory.swift */,
-				74D036D42798496A002FF1F6 /* ConversationRowView.swift */,
-				74D036D627984DF3002FF1F6 /* ConversationRowSubView.swift */,
-				74D036D8279A56CE002FF1F6 /* CommunityRowView.swift */,
-				74D036DA279BF725002FF1F6 /* SettingView.swift */,
-				74D036DC279C07DA002FF1F6 /* AddOpinionView.swift */,
-				74C4631227A5266A0005852C /* LoginView.swift */,
-				743038A927A66747006B05D5 /* FBLoginBtn.swift */,
-				743038AB27A8E744006B05D5 /* KakaoLoginBtn.swift */,
+				7440838427AFBAC700A9AD12 /* View */,
 				74213AE82793175B00596410 /* Preview Content */,
 			);
 			path = Mandam;
@@ -134,6 +122,82 @@
 				74213AE92793175B00596410 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7440838427AFBAC700A9AD12 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				74213AE42793175700596410 /* ContentView.swift */,
+				7440838527AFBAE700A9AD12 /* Conversation */,
+				7440838627AFBAF500A9AD12 /* Community */,
+				7440838927AFBC1900A9AD12 /* Setting */,
+				7440838A27AFBC2F00A9AD12 /* Login */,
+				7440838827AFBB8100A9AD12 /* Component */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7440838527AFBAE700A9AD12 /* Conversation */ = {
+			isa = PBXGroup;
+			children = (
+				74213AF027940F9100596410 /* ConversationView.swift */,
+				74D036D42798496A002FF1F6 /* ConversationRowView.swift */,
+				74D036D627984DF3002FF1F6 /* ConversationRowSubView.swift */,
+			);
+			path = Conversation;
+			sourceTree = "<group>";
+		};
+		7440838627AFBAF500A9AD12 /* Community */ = {
+			isa = PBXGroup;
+			children = (
+				74213AF42794194E00596410 /* CommunityView.swift */,
+				74D036D8279A56CE002FF1F6 /* CommunityRowView.swift */,
+				74D036DC279C07DA002FF1F6 /* AddOpinionView.swift */,
+			);
+			path = Community;
+			sourceTree = "<group>";
+		};
+		7440838727AFBB3900A9AD12 /* Filter */ = {
+			isa = PBXGroup;
+			children = (
+				74213AF62795572400596410 /* FilterView.swift */,
+			);
+			path = Filter;
+			sourceTree = "<group>";
+		};
+		7440838827AFBB8100A9AD12 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				74213AF82795668500596410 /* SearchBar.swift */,
+				7440838727AFBB3900A9AD12 /* Filter */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		7440838927AFBC1900A9AD12 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				74D036DA279BF725002FF1F6 /* SettingView.swift */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		7440838A27AFBC2F00A9AD12 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				74C4631227A5266A0005852C /* LoginView.swift */,
+				743038A927A66747006B05D5 /* FBLoginBtn.swift */,
+				743038AB27A8E744006B05D5 /* KakaoLoginBtn.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		7440838B27AFFE6F00A9AD12 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7440838D27AFFEB700A9AD12 /* SelectedFilters+Enum.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		A9DB21E58936CD392517F7BF /* Frameworks */ = {
@@ -273,11 +337,11 @@
 			files = (
 				74213AE52793175700596410 /* ContentView.swift in Sources */,
 				74D036D9279A56CE002FF1F6 /* CommunityRowView.swift in Sources */,
-				74B1681B279683F7002A8433 /* customCategory.swift in Sources */,
 				74D036DD279C07DA002FF1F6 /* AddOpinionView.swift in Sources */,
 				74D036D52798496A002FF1F6 /* ConversationRowView.swift in Sources */,
 				74213AE32793175700596410 /* MandamApp.swift in Sources */,
 				74213AF52794194E00596410 /* CommunityView.swift in Sources */,
+				7440838E27AFFEB700A9AD12 /* SelectedFilters+Enum.swift in Sources */,
 				74213AF72795572400596410 /* FilterView.swift in Sources */,
 				74213AF127940F9100596410 /* ConversationView.swift in Sources */,
 				74D036D727984DF3002FF1F6 /* ConversationRowSubView.swift in Sources */,
