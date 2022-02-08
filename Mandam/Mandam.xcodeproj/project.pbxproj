@@ -23,6 +23,8 @@
 		743038BC27A900B3006B05D5 /* KakaoSDKUser in Frameworks */ = {isa = PBXBuildFile; productRef = 743038BB27A900B3006B05D5 /* KakaoSDKUser */; };
 		743038BF27A90ACB006B05D5 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 743038BE27A90ACB006B05D5 /* Alamofire */; };
 		7440838E27AFFEB700A9AD12 /* SelectedFilters+Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7440838D27AFFEB700A9AD12 /* SelectedFilters+Enum.swift */; };
+		7440839127B0231D00A9AD12 /* BottomSheet in Frameworks */ = {isa = PBXBuildFile; productRef = 7440839027B0231D00A9AD12 /* BottomSheet */; };
+		7440839427B294FA00A9AD12 /* ColorHex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7440839327B294FA00A9AD12 /* ColorHex.swift */; };
 		74C4631127A513170005852C /* FacebookLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 74C4631027A513170005852C /* FacebookLogin */; };
 		74C4631327A5266A0005852C /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C4631227A5266A0005852C /* LoginView.swift */; };
 		74D036D52798496A002FF1F6 /* ConversationRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D036D42798496A002FF1F6 /* ConversationRowView.swift */; };
@@ -46,6 +48,7 @@
 		743038A927A66747006B05D5 /* FBLoginBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBLoginBtn.swift; sourceTree = "<group>"; };
 		743038AB27A8E744006B05D5 /* KakaoLoginBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoLoginBtn.swift; sourceTree = "<group>"; };
 		7440838D27AFFEB700A9AD12 /* SelectedFilters+Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SelectedFilters+Enum.swift"; sourceTree = "<group>"; };
+		7440839327B294FA00A9AD12 /* ColorHex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorHex.swift; sourceTree = "<group>"; };
 		74C4631227A5266A0005852C /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		74C4631427A65BAE0005852C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		74D036D42798496A002FF1F6 /* ConversationRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationRowView.swift; sourceTree = "<group>"; };
@@ -64,6 +67,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				74C4631127A513170005852C /* FacebookLogin in Frameworks */,
+				7440839127B0231D00A9AD12 /* BottomSheet in Frameworks */,
 				743038BF27A90ACB006B05D5 /* Alamofire in Frameworks */,
 				F22FC54E0CBB1EC5098384C3 /* Pods_Mandam.framework in Frameworks */,
 				743038BC27A900B3006B05D5 /* KakaoSDKUser in Frameworks */,
@@ -106,6 +110,7 @@
 		74213AE12793175700596410 /* Mandam */ = {
 			isa = PBXGroup;
 			children = (
+				7440839227B294DF00A9AD12 /* Extension */,
 				7440838B27AFFE6F00A9AD12 /* Model */,
 				74C4631427A65BAE0005852C /* Info.plist */,
 				74213AE22793175700596410 /* MandamApp.swift */,
@@ -200,6 +205,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		7440839227B294DF00A9AD12 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				7440839327B294FA00A9AD12 /* ColorHex.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		A9DB21E58936CD392517F7BF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -233,6 +246,7 @@
 				743038B927A900B3006B05D5 /* KakaoSDKCommon */,
 				743038BB27A900B3006B05D5 /* KakaoSDKUser */,
 				743038BE27A90ACB006B05D5 /* Alamofire */,
+				7440839027B0231D00A9AD12 /* BottomSheet */,
 			);
 			productName = Mandam;
 			productReference = 74213ADF2793175700596410 /* Mandam.app */;
@@ -266,6 +280,7 @@
 				74C4630F27A513170005852C /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */,
 				743038B427A900B3006B05D5 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */,
 				743038BD27A90ACB006B05D5 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				7440838F27B0231D00A9AD12 /* XCRemoteSwiftPackageReference "BottomSheet" */,
 			);
 			productRefGroup = 74213AE02793175700596410 /* Products */;
 			projectDirPath = "";
@@ -348,6 +363,7 @@
 				74213AF92795668500596410 /* SearchBar.swift in Sources */,
 				74D036DB279BF725002FF1F6 /* SettingView.swift in Sources */,
 				74C4631327A5266A0005852C /* LoginView.swift in Sources */,
+				7440839427B294FA00A9AD12 /* ColorHex.swift in Sources */,
 				743038AC27A8E744006B05D5 /* KakaoLoginBtn.swift in Sources */,
 				743038AA27A66747006B05D5 /* FBLoginBtn.swift in Sources */,
 			);
@@ -580,6 +596,14 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		7440838F27B0231D00A9AD12 /* XCRemoteSwiftPackageReference "BottomSheet" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/LucasMucGH/BottomSheet";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 		74C4630F27A513170005852C /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/facebook/facebook-ios-sdk";
@@ -615,6 +639,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 743038BD27A90ACB006B05D5 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		7440839027B0231D00A9AD12 /* BottomSheet */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7440838F27B0231D00A9AD12 /* XCRemoteSwiftPackageReference "BottomSheet" */;
+			productName = BottomSheet;
 		};
 		74C4631027A513170005852C /* FacebookLogin */ = {
 			isa = XCSwiftPackageProductDependency;

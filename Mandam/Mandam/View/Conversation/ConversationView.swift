@@ -49,8 +49,7 @@ struct ConversationView: View {
                         }
                     }
                 }
-                .padding()
-                .listStyle(.plain)
+//                .listStyle(.plain)
             }
             .navigationTitle("대화하기")
             .navigationBarTitleDisplayMode(.inline)

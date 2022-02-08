@@ -12,28 +12,25 @@ struct ConversationRowView: View {
     @State private var isShowSubQ: Bool = false
     
     var body: some View {
-        ZStack {
-            Button {
-                isShowSubQ = !isShowSubQ
-            } label: {
-                VStack(alignment: .leading) {
-                    HStack{
-                        Text(question.mainQ)
-                            .bold()
-                        Spacer()
-                        Image(systemName: isShowSubQ ? "chevron.up" : "chevron.down")
-                    }
-                    if isShowSubQ {
-                        ConversationRowSubView(question: question)
-                            .frame(width: .infinity, height: 42*CGFloat(question.subQ.count), alignment: .leading)
-                        // 유연하게 크기 지정 (추후 변경)
-                    }
+        Button {
+            isShowSubQ = !isShowSubQ
+        } label: {
+            VStack(alignment: .leading) {
+                HStack{
+                    Text(question.mainQ)
+                        .bold()
+                    Spacer()
+                    Image(systemName: isShowSubQ ? "chevron.up" : "chevron.down")
                 }
-                
+                if isShowSubQ {
+                    ConversationRowSubView(question: question)
+                        .frame(width: .infinity, height: 42*CGFloat(question.subQ.count), alignment: .leading)
+                    // 유연하게 크기 지정 (추후 변경)
+                }
             }
-            .padding()
+            
         }
-        .background(.regularMaterial)
+        .padding()
     }
 }
 

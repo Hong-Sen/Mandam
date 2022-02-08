@@ -11,6 +11,15 @@
         }
       },
       {
+        "package": "BottomSheet",
+        "repositoryURL": "https://github.com/LucasMucGH/BottomSheet",
+        "state": {
+          "branch": "main",
+          "revision": "e72f137d71ba311e9e3f39b75ed4c0c2c97c8a98",
+          "version": null
+        }
+      },
+      {
         "package": "Facebook",
         "repositoryURL": "https://github.com/facebook/facebook-ios-sdk",
         "state": {
