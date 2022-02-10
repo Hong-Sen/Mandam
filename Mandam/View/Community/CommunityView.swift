@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import RealmSwift
 
 struct Opinion: Hashable {
     var timestamp = String(Date().timeIntervalSince1970)
@@ -31,10 +32,21 @@ class OpinionList: ObservableObject {
 }
 
 struct CommunityView: View {
+    @ObservedResults(User.self) var users
+    
     @State private var searchString: String = ""
     @State private var isSearch: Bool = false
     @State private var isShowAddOpinion: Bool = false
     var opList = OpinionList().opinionList
+    
+    init() {
+        if users.isEmpty {
+            let realm = try! Realm()
+            try! realm.write {
+                realm.add(User())
+            }
+        }
+    }
     
     var body: some View {
         NavigationView {
@@ -88,7 +100,7 @@ struct CommunityView: View {
                 }
                 ToolbarItem(placement: .navigationBarTrailing) {
                     NavigationLink {
-                        SettingView()
+                        SettingView(user: users.first!)
                     } label: {
                         Image(systemName: "person")
                     }
