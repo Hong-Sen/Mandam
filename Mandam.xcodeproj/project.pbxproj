@@ -110,6 +110,7 @@
 				74213AE22793175700596410 /* MandamApp.swift */,
 				74D8E34427B55A0100D17D14 /* Model */,
 				74D8E34A27B55A0D00D17D14 /* View */,
+				74213AE62793175B00596410 /* Assets.xcassets */,
 				74213AE82793175B00596410 /* Preview Content */,
 			);
 			path = Mandam;
@@ -118,7 +119,6 @@
 		74213AE82793175B00596410 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				74213AE62793175B00596410 /* Assets.xcassets */,
 				74213AE92793175B00596410 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
