@@ -8,47 +8,55 @@
 
 /* Begin PBXBuildFile section */
 		74213AE32793175700596410 /* MandamApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74213AE22793175700596410 /* MandamApp.swift */; };
-		74213AE52793175700596410 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74213AE42793175700596410 /* ContentView.swift */; };
 		74213AE72793175B00596410 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74213AE62793175B00596410 /* Assets.xcassets */; };
 		74213AEA2793175B00596410 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74213AE92793175B00596410 /* Preview Assets.xcassets */; };
-		74213AF127940F9100596410 /* ConversationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74213AF027940F9100596410 /* ConversationView.swift */; };
-		74213AF52794194E00596410 /* CommunityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74213AF42794194E00596410 /* CommunityView.swift */; };
-		74213AF72795572400596410 /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74213AF62795572400596410 /* FilterView.swift */; };
-		74213AF92795668500596410 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74213AF82795668500596410 /* SearchBar.swift */; };
-		743038AA27A66747006B05D5 /* FBLoginBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743038A927A66747006B05D5 /* FBLoginBtn.swift */; };
-		743038AC27A8E744006B05D5 /* KakaoLoginBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743038AB27A8E744006B05D5 /* KakaoLoginBtn.swift */; };
-		7440838E27AFFEB700A9AD12 /* SelectedFilters+Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7440838D27AFFEB700A9AD12 /* SelectedFilters+Enum.swift */; };
-		7440839427B294FA00A9AD12 /* ColorHex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7440839327B294FA00A9AD12 /* ColorHex.swift */; };
-		74C4631327A5266A0005852C /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C4631227A5266A0005852C /* LoginView.swift */; };
-		74D036D52798496A002FF1F6 /* ConversationRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D036D42798496A002FF1F6 /* ConversationRowView.swift */; };
-		74D036D727984DF3002FF1F6 /* ConversationRowSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D036D627984DF3002FF1F6 /* ConversationRowSubView.swift */; };
-		74D036D9279A56CE002FF1F6 /* CommunityRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D036D8279A56CE002FF1F6 /* CommunityRowView.swift */; };
-		74D036DB279BF725002FF1F6 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D036DA279BF725002FF1F6 /* SettingView.swift */; };
-		74D036DD279C07DA002FF1F6 /* AddOpinionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D036DC279C07DA002FF1F6 /* AddOpinionView.swift */; };
+		74D8E33D27B559CF00D17D14 /* ColorHex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D8E33C27B559CF00D17D14 /* ColorHex.swift */; };
+		74D8E34227B559DC00D17D14 /* SelectedFilters+Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D8E33F27B559DC00D17D14 /* SelectedFilters+Enum.swift */; };
+		74D8E34327B559DC00D17D14 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D8E34127B559DC00D17D14 /* User.swift */; };
+		74D8E34827B55A0100D17D14 /* SelectedFilters+Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D8E34527B55A0100D17D14 /* SelectedFilters+Enum.swift */; };
+		74D8E34927B55A0100D17D14 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D8E34727B55A0100D17D14 /* User.swift */; };
+		74D8E35F27B55A0D00D17D14 /* SocialLoginBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D8E34C27B55A0D00D17D14 /* SocialLoginBtn.swift */; };
+		74D8E36027B55A0D00D17D14 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D8E34D27B55A0D00D17D14 /* SearchBar.swift */; };
+		74D8E36127B55A0D00D17D14 /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D8E34F27B55A0D00D17D14 /* FilterView.swift */; };
+		74D8E36227B55A0D00D17D14 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D8E35127B55A0D00D17D14 /* SettingView.swift */; };
+		74D8E36327B55A0D00D17D14 /* CommunityRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D8E35327B55A0D00D17D14 /* CommunityRowView.swift */; };
+		74D8E36427B55A0D00D17D14 /* AddOpinionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D8E35427B55A0D00D17D14 /* AddOpinionView.swift */; };
+		74D8E36527B55A0D00D17D14 /* CommunityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D8E35527B55A0D00D17D14 /* CommunityView.swift */; };
+		74D8E36627B55A0D00D17D14 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D8E35627B55A0D00D17D14 /* ContentView.swift */; };
+		74D8E36727B55A0D00D17D14 /* KakaoLoginBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D8E35827B55A0D00D17D14 /* KakaoLoginBtn.swift */; };
+		74D8E36827B55A0D00D17D14 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D8E35927B55A0D00D17D14 /* LoginView.swift */; };
+		74D8E36927B55A0D00D17D14 /* FBLoginBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D8E35A27B55A0D00D17D14 /* FBLoginBtn.swift */; };
+		74D8E36A27B55A0D00D17D14 /* ConversationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D8E35C27B55A0D00D17D14 /* ConversationView.swift */; };
+		74D8E36B27B55A0D00D17D14 /* ConversationRowSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D8E35D27B55A0D00D17D14 /* ConversationRowSubView.swift */; };
+		74D8E36C27B55A0D00D17D14 /* ConversationRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D8E35E27B55A0D00D17D14 /* ConversationRowView.swift */; };
 		F22FC54E0CBB1EC5098384C3 /* Pods_Mandam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC58D078E0CA503F3C352DAD /* Pods_Mandam.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		74213ADF2793175700596410 /* Mandam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mandam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74213AE22793175700596410 /* MandamApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MandamApp.swift; sourceTree = "<group>"; };
-		74213AE42793175700596410 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		74213AE62793175B00596410 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		74213AE92793175B00596410 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		74213AF027940F9100596410 /* ConversationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationView.swift; sourceTree = "<group>"; };
-		74213AF42794194E00596410 /* CommunityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityView.swift; sourceTree = "<group>"; };
-		74213AF62795572400596410 /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
-		74213AF82795668500596410 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
-		743038A927A66747006B05D5 /* FBLoginBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBLoginBtn.swift; sourceTree = "<group>"; };
-		743038AB27A8E744006B05D5 /* KakaoLoginBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoLoginBtn.swift; sourceTree = "<group>"; };
-		7440838D27AFFEB700A9AD12 /* SelectedFilters+Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SelectedFilters+Enum.swift"; sourceTree = "<group>"; };
-		7440839327B294FA00A9AD12 /* ColorHex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorHex.swift; sourceTree = "<group>"; };
-		74C4631227A5266A0005852C /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		74C4631427A65BAE0005852C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		74D036D42798496A002FF1F6 /* ConversationRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationRowView.swift; sourceTree = "<group>"; };
-		74D036D627984DF3002FF1F6 /* ConversationRowSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationRowSubView.swift; sourceTree = "<group>"; };
-		74D036D8279A56CE002FF1F6 /* CommunityRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityRowView.swift; sourceTree = "<group>"; };
-		74D036DA279BF725002FF1F6 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
-		74D036DC279C07DA002FF1F6 /* AddOpinionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOpinionView.swift; sourceTree = "<group>"; };
+		74D8E33C27B559CF00D17D14 /* ColorHex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorHex.swift; sourceTree = "<group>"; };
+		74D8E33F27B559DC00D17D14 /* SelectedFilters+Enum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SelectedFilters+Enum.swift"; sourceTree = "<group>"; };
+		74D8E34127B559DC00D17D14 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		74D8E34527B55A0100D17D14 /* SelectedFilters+Enum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SelectedFilters+Enum.swift"; sourceTree = "<group>"; };
+		74D8E34727B55A0100D17D14 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		74D8E34C27B55A0D00D17D14 /* SocialLoginBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialLoginBtn.swift; sourceTree = "<group>"; };
+		74D8E34D27B55A0D00D17D14 /* SearchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		74D8E34F27B55A0D00D17D14 /* FilterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
+		74D8E35127B55A0D00D17D14 /* SettingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		74D8E35327B55A0D00D17D14 /* CommunityRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommunityRowView.swift; sourceTree = "<group>"; };
+		74D8E35427B55A0D00D17D14 /* AddOpinionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddOpinionView.swift; sourceTree = "<group>"; };
+		74D8E35527B55A0D00D17D14 /* CommunityView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommunityView.swift; sourceTree = "<group>"; };
+		74D8E35627B55A0D00D17D14 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		74D8E35827B55A0D00D17D14 /* KakaoLoginBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KakaoLoginBtn.swift; sourceTree = "<group>"; };
+		74D8E35927B55A0D00D17D14 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		74D8E35A27B55A0D00D17D14 /* FBLoginBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBLoginBtn.swift; sourceTree = "<group>"; };
+		74D8E35C27B55A0D00D17D14 /* ConversationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationView.swift; sourceTree = "<group>"; };
+		74D8E35D27B55A0D00D17D14 /* ConversationRowSubView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationRowSubView.swift; sourceTree = "<group>"; };
+		74D8E35E27B55A0D00D17D14 /* ConversationRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationRowView.swift; sourceTree = "<group>"; };
 		AC58D078E0CA503F3C352DAD /* Pods_Mandam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mandam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2B33A7B58E716CE2F269830 /* Pods-Mandam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mandam.release.xcconfig"; path = "Target Support Files/Pods-Mandam/Pods-Mandam.release.xcconfig"; sourceTree = "<group>"; };
 		FD7A1F651889A505E99C85F5 /* Pods-Mandam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mandam.debug.xcconfig"; path = "Target Support Files/Pods-Mandam/Pods-Mandam.debug.xcconfig"; sourceTree = "<group>"; };
@@ -96,11 +104,12 @@
 		74213AE12793175700596410 /* Mandam */ = {
 			isa = PBXGroup;
 			children = (
-				7440839227B294DF00A9AD12 /* Extension */,
-				7440838B27AFFE6F00A9AD12 /* Model */,
+				74D8E33B27B559CF00D17D14 /* Extension */,
+				74D8E33E27B559DC00D17D14 /* Model */,
 				74C4631427A65BAE0005852C /* Info.plist */,
 				74213AE22793175700596410 /* MandamApp.swift */,
-				7440838427AFBAC700A9AD12 /* View */,
+				74D8E34427B55A0100D17D14 /* Model */,
+				74D8E34A27B55A0D00D17D14 /* View */,
 				74213AE82793175B00596410 /* Preview Content */,
 			);
 			path = Mandam;
@@ -115,88 +124,118 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		7440838427AFBAC700A9AD12 /* View */ = {
+		74D8E33B27B559CF00D17D14 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				74213AE42793175700596410 /* ContentView.swift */,
-				7440838527AFBAE700A9AD12 /* Conversation */,
-				7440838627AFBAF500A9AD12 /* Community */,
-				7440838927AFBC1900A9AD12 /* Setting */,
-				7440838A27AFBC2F00A9AD12 /* Login */,
-				7440838827AFBB8100A9AD12 /* Component */,
+				74D8E33C27B559CF00D17D14 /* ColorHex.swift */,
 			);
-			path = View;
+			path = Extension;
 			sourceTree = "<group>";
 		};
-		7440838527AFBAE700A9AD12 /* Conversation */ = {
+		74D8E33E27B559DC00D17D14 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				74213AF027940F9100596410 /* ConversationView.swift */,
-				74D036D42798496A002FF1F6 /* ConversationRowView.swift */,
-				74D036D627984DF3002FF1F6 /* ConversationRowSubView.swift */,
+				74D8E33F27B559DC00D17D14 /* SelectedFilters+Enum.swift */,
+				74D8E34027B559DC00D17D14 /* Realm */,
 			);
-			path = Conversation;
+			name = Model;
+			path = ../../ddddd/Model;
 			sourceTree = "<group>";
 		};
-		7440838627AFBAF500A9AD12 /* Community */ = {
+		74D8E34027B559DC00D17D14 /* Realm */ = {
 			isa = PBXGroup;
 			children = (
-				74213AF42794194E00596410 /* CommunityView.swift */,
-				74D036D8279A56CE002FF1F6 /* CommunityRowView.swift */,
-				74D036DC279C07DA002FF1F6 /* AddOpinionView.swift */,
+				74D8E34127B559DC00D17D14 /* User.swift */,
 			);
-			path = Community;
+			path = Realm;
 			sourceTree = "<group>";
 		};
-		7440838727AFBB3900A9AD12 /* Filter */ = {
+		74D8E34427B55A0100D17D14 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				74213AF62795572400596410 /* FilterView.swift */,
+				74D8E34527B55A0100D17D14 /* SelectedFilters+Enum.swift */,
+				74D8E34627B55A0100D17D14 /* Realm */,
 			);
-			path = Filter;
+			name = Model;
+			path = ../../ddddd/Model;
 			sourceTree = "<group>";
 		};
-		7440838827AFBB8100A9AD12 /* Component */ = {
+		74D8E34627B55A0100D17D14 /* Realm */ = {
 			isa = PBXGroup;
 			children = (
-				74213AF82795668500596410 /* SearchBar.swift */,
-				7440838727AFBB3900A9AD12 /* Filter */,
+				74D8E34727B55A0100D17D14 /* User.swift */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
+		74D8E34A27B55A0D00D17D14 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				74D8E34B27B55A0D00D17D14 /* Component */,
+				74D8E35027B55A0D00D17D14 /* Setting */,
+				74D8E35227B55A0D00D17D14 /* Community */,
+				74D8E35627B55A0D00D17D14 /* ContentView.swift */,
+				74D8E35727B55A0D00D17D14 /* Login */,
+				74D8E35B27B55A0D00D17D14 /* Conversation */,
+			);
+			name = View;
+			path = ../../ddddd/View;
+			sourceTree = "<group>";
+		};
+		74D8E34B27B55A0D00D17D14 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				74D8E34C27B55A0D00D17D14 /* SocialLoginBtn.swift */,
+				74D8E34D27B55A0D00D17D14 /* SearchBar.swift */,
+				74D8E34E27B55A0D00D17D14 /* Filter */,
 			);
 			path = Component;
 			sourceTree = "<group>";
 		};
-		7440838927AFBC1900A9AD12 /* Setting */ = {
+		74D8E34E27B55A0D00D17D14 /* Filter */ = {
 			isa = PBXGroup;
 			children = (
-				74D036DA279BF725002FF1F6 /* SettingView.swift */,
+				74D8E34F27B55A0D00D17D14 /* FilterView.swift */,
+			);
+			path = Filter;
+			sourceTree = "<group>";
+		};
+		74D8E35027B55A0D00D17D14 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				74D8E35127B55A0D00D17D14 /* SettingView.swift */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
 		};
-		7440838A27AFBC2F00A9AD12 /* Login */ = {
+		74D8E35227B55A0D00D17D14 /* Community */ = {
 			isa = PBXGroup;
 			children = (
-				74C4631227A5266A0005852C /* LoginView.swift */,
-				743038A927A66747006B05D5 /* FBLoginBtn.swift */,
-				743038AB27A8E744006B05D5 /* KakaoLoginBtn.swift */,
+				74D8E35327B55A0D00D17D14 /* CommunityRowView.swift */,
+				74D8E35427B55A0D00D17D14 /* AddOpinionView.swift */,
+				74D8E35527B55A0D00D17D14 /* CommunityView.swift */,
+			);
+			path = Community;
+			sourceTree = "<group>";
+		};
+		74D8E35727B55A0D00D17D14 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				74D8E35827B55A0D00D17D14 /* KakaoLoginBtn.swift */,
+				74D8E35927B55A0D00D17D14 /* LoginView.swift */,
+				74D8E35A27B55A0D00D17D14 /* FBLoginBtn.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
 		};
-		7440838B27AFFE6F00A9AD12 /* Model */ = {
+		74D8E35B27B55A0D00D17D14 /* Conversation */ = {
 			isa = PBXGroup;
 			children = (
-				7440838D27AFFEB700A9AD12 /* SelectedFilters+Enum.swift */,
+				74D8E35C27B55A0D00D17D14 /* ConversationView.swift */,
+				74D8E35D27B55A0D00D17D14 /* ConversationRowSubView.swift */,
+				74D8E35E27B55A0D00D17D14 /* ConversationRowView.swift */,
 			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		7440839227B294DF00A9AD12 /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-				7440839327B294FA00A9AD12 /* ColorHex.swift */,
-			);
-			path = Extension;
+			path = Conversation;
 			sourceTree = "<group>";
 		};
 		A9DB21E58936CD392517F7BF /* Frameworks */ = {
@@ -325,22 +364,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74213AE52793175700596410 /* ContentView.swift in Sources */,
-				74D036D9279A56CE002FF1F6 /* CommunityRowView.swift in Sources */,
-				74D036DD279C07DA002FF1F6 /* AddOpinionView.swift in Sources */,
-				74D036D52798496A002FF1F6 /* ConversationRowView.swift in Sources */,
 				74213AE32793175700596410 /* MandamApp.swift in Sources */,
-				74213AF52794194E00596410 /* CommunityView.swift in Sources */,
-				7440838E27AFFEB700A9AD12 /* SelectedFilters+Enum.swift in Sources */,
-				74213AF72795572400596410 /* FilterView.swift in Sources */,
-				74213AF127940F9100596410 /* ConversationView.swift in Sources */,
-				74D036D727984DF3002FF1F6 /* ConversationRowSubView.swift in Sources */,
-				74213AF92795668500596410 /* SearchBar.swift in Sources */,
-				74D036DB279BF725002FF1F6 /* SettingView.swift in Sources */,
-				74C4631327A5266A0005852C /* LoginView.swift in Sources */,
-				7440839427B294FA00A9AD12 /* ColorHex.swift in Sources */,
-				743038AC27A8E744006B05D5 /* KakaoLoginBtn.swift in Sources */,
-				743038AA27A66747006B05D5 /* FBLoginBtn.swift in Sources */,
+				74D8E36227B55A0D00D17D14 /* SettingView.swift in Sources */,
+				74D8E36C27B55A0D00D17D14 /* ConversationRowView.swift in Sources */,
+				74D8E36627B55A0D00D17D14 /* ContentView.swift in Sources */,
+				74D8E34327B559DC00D17D14 /* User.swift in Sources */,
+				74D8E36B27B55A0D00D17D14 /* ConversationRowSubView.swift in Sources */,
+				74D8E36927B55A0D00D17D14 /* FBLoginBtn.swift in Sources */,
+				74D8E36427B55A0D00D17D14 /* AddOpinionView.swift in Sources */,
+				74D8E34927B55A0100D17D14 /* User.swift in Sources */,
+				74D8E34227B559DC00D17D14 /* SelectedFilters+Enum.swift in Sources */,
+				74D8E36527B55A0D00D17D14 /* CommunityView.swift in Sources */,
+				74D8E36127B55A0D00D17D14 /* FilterView.swift in Sources */,
+				74D8E33D27B559CF00D17D14 /* ColorHex.swift in Sources */,
+				74D8E36027B55A0D00D17D14 /* SearchBar.swift in Sources */,
+				74D8E36327B55A0D00D17D14 /* CommunityRowView.swift in Sources */,
+				74D8E35F27B55A0D00D17D14 /* SocialLoginBtn.swift in Sources */,
+				74D8E36727B55A0D00D17D14 /* KakaoLoginBtn.swift in Sources */,
+				74D8E36827B55A0D00D17D14 /* LoginView.swift in Sources */,
+				74D8E34827B55A0100D17D14 /* SelectedFilters+Enum.swift in Sources */,
+				74D8E36A27B55A0D00D17D14 /* ConversationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
