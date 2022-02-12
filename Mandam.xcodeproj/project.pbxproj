@@ -25,6 +25,7 @@
 		749531A227B6C28E0017FC67 /* ConversationRowSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7495319427B6C28E0017FC67 /* ConversationRowSubView.swift */; };
 		749531A327B6C28E0017FC67 /* ConversationRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7495319527B6C28E0017FC67 /* ConversationRowView.swift */; };
 		749531AD27B6C55F0017FC67 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749531AC27B6C55F0017FC67 /* User.swift */; };
+		749531AF27B6C7D30017FC67 /* SelectedFilters+Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749531AE27B6C7D30017FC67 /* SelectedFilters+Enum.swift */; };
 		74D8E33D27B559CF00D17D14 /* ColorHex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D8E33C27B559CF00D17D14 /* ColorHex.swift */; };
 		F22FC54E0CBB1EC5098384C3 /* Pods_Mandam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC58D078E0CA503F3C352DAD /* Pods_Mandam.framework */; };
 /* End PBXBuildFile section */
@@ -49,6 +50,7 @@
 		7495319427B6C28E0017FC67 /* ConversationRowSubView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationRowSubView.swift; sourceTree = "<group>"; };
 		7495319527B6C28E0017FC67 /* ConversationRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationRowView.swift; sourceTree = "<group>"; };
 		749531AC27B6C55F0017FC67 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		749531AE27B6C7D30017FC67 /* SelectedFilters+Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SelectedFilters+Enum.swift"; sourceTree = "<group>"; };
 		74C4631427A65BAE0005852C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		74D8E33C27B559CF00D17D14 /* ColorHex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorHex.swift; sourceTree = "<group>"; };
 		AC58D078E0CA503F3C352DAD /* Pods_Mandam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mandam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -191,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				749531AB27B6C55F0017FC67 /* Realm */,
+				749531AE27B6C7D30017FC67 /* SelectedFilters+Enum.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -340,6 +343,7 @@
 				74213AE32793175700596410 /* MandamApp.swift in Sources */,
 				7495319927B6C28E0017FC67 /* SettingView.swift in Sources */,
 				749531A327B6C28E0017FC67 /* ConversationRowView.swift in Sources */,
+				749531AF27B6C7D30017FC67 /* SelectedFilters+Enum.swift in Sources */,
 				7495319D27B6C28E0017FC67 /* ContentView.swift in Sources */,
 				749531A227B6C28E0017FC67 /* ConversationRowSubView.swift in Sources */,
 				749531A027B6C28E0017FC67 /* FBLoginBtn.swift in Sources */,
