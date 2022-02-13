@@ -40,7 +40,7 @@ struct MandamApp: SwiftUI.App {
     var body: some Scene {
         WindowGroup {
             ContentView()
-            //                .environment(\.realmConfiguration, realmConfigration)
+//                .environment(\.realmConfiguration, realmConfigration) ????
                 .onOpenURL { url in
                     
                     // https://devtalk.kakao.com/t/topic/119363/10 네이버 로그인과 같이 사용시 메인스레드 패닉오는 버그때는에 if-else 처리함
@@ -49,9 +49,7 @@ struct MandamApp: SwiftUI.App {
                     if (AuthApi.isKakaoTalkLoginUrl(url)) {
                         _ = AuthController.handleOpenUrl(url: url)
                     }
-                    //                    if AuthApi.isKakaoTalkLoginUrl(url) {
-                    //                        let _ = AuthController.handleOpenUrl(url: url)
-                    //                    }
+                    
                     // Facebook
                     else if(ApplicationDelegate.shared.application(
                         UIApplication.shared,
@@ -82,9 +80,9 @@ struct MandamApp: SwiftUI.App {
     }
 }
 
-extension UINavigationController {
-    // Remove back button text
-    open override func viewWillLayoutSubviews() {
-        navigationBar.topItem?.backButtonDisplayMode = .minimal
-    }
-}
+//extension UINavigationController {
+//    // Remove back button text
+//    open override func viewWillLayoutSubviews() {
+//        navigationBar.topItem?.backButtonDisplayMode = .minimal
+//    }
+//}
