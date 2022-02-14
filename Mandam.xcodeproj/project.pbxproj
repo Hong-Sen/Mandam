@@ -26,6 +26,7 @@
 		749531A327B6C28E0017FC67 /* ConversationRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7495319527B6C28E0017FC67 /* ConversationRowView.swift */; };
 		749531AD27B6C55F0017FC67 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749531AC27B6C55F0017FC67 /* User.swift */; };
 		749531AF27B6C7D30017FC67 /* SelectedFilters+Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749531AE27B6C7D30017FC67 /* SelectedFilters+Enum.swift */; };
+		749531B227B8E6A40017FC67 /* UserLoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749531B127B8E6A40017FC67 /* UserLoginManager.swift */; };
 		74D8E33D27B559CF00D17D14 /* ColorHex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D8E33C27B559CF00D17D14 /* ColorHex.swift */; };
 		F22FC54E0CBB1EC5098384C3 /* Pods_Mandam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC58D078E0CA503F3C352DAD /* Pods_Mandam.framework */; };
 /* End PBXBuildFile section */
@@ -51,6 +52,7 @@
 		7495319527B6C28E0017FC67 /* ConversationRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationRowView.swift; sourceTree = "<group>"; };
 		749531AC27B6C55F0017FC67 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		749531AE27B6C7D30017FC67 /* SelectedFilters+Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SelectedFilters+Enum.swift"; sourceTree = "<group>"; };
+		749531B127B8E6A40017FC67 /* UserLoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLoginManager.swift; sourceTree = "<group>"; };
 		74C4631427A65BAE0005852C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		74D8E33C27B559CF00D17D14 /* ColorHex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorHex.swift; sourceTree = "<group>"; };
 		AC58D078E0CA503F3C352DAD /* Pods_Mandam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mandam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,12 +102,13 @@
 		74213AE12793175700596410 /* Mandam */ = {
 			isa = PBXGroup;
 			children = (
+				749531B027B8E6910017FC67 /* Modules */,
+				74213AE22793175700596410 /* MandamApp.swift */,
+				74C4631427A65BAE0005852C /* Info.plist */,
+				74213AE62793175B00596410 /* Assets.xcassets */,
 				749531AA27B6C55F0017FC67 /* Model */,
 				7495318127B6C28E0017FC67 /* View */,
 				74D8E33B27B559CF00D17D14 /* Extension */,
-				74C4631427A65BAE0005852C /* Info.plist */,
-				74213AE22793175700596410 /* MandamApp.swift */,
-				74213AE62793175B00596410 /* Assets.xcassets */,
 				74213AE82793175B00596410 /* Preview Content */,
 			);
 			path = Mandam;
@@ -122,10 +125,10 @@
 		7495318127B6C28E0017FC67 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7495318D27B6C28E0017FC67 /* ContentView.swift */,
 				7495318227B6C28E0017FC67 /* Component */,
 				7495318727B6C28E0017FC67 /* Setting */,
 				7495318927B6C28E0017FC67 /* Community */,
-				7495318D27B6C28E0017FC67 /* ContentView.swift */,
 				7495318E27B6C28E0017FC67 /* Login */,
 				7495319227B6C28E0017FC67 /* Conversation */,
 			);
@@ -204,6 +207,14 @@
 				749531AC27B6C55F0017FC67 /* User.swift */,
 			);
 			path = Realm;
+			sourceTree = "<group>";
+		};
+		749531B027B8E6910017FC67 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				749531B127B8E6A40017FC67 /* UserLoginManager.swift */,
+			);
+			path = Modules;
 			sourceTree = "<group>";
 		};
 		74D8E33B27B559CF00D17D14 /* Extension */ = {
@@ -348,6 +359,7 @@
 				749531A227B6C28E0017FC67 /* ConversationRowSubView.swift in Sources */,
 				749531A027B6C28E0017FC67 /* FBLoginBtn.swift in Sources */,
 				7495319B27B6C28E0017FC67 /* AddOpinionView.swift in Sources */,
+				749531B227B8E6A40017FC67 /* UserLoginManager.swift in Sources */,
 				749531AD27B6C55F0017FC67 /* User.swift in Sources */,
 				7495319C27B6C28E0017FC67 /* CommunityView.swift in Sources */,
 				7495319827B6C28E0017FC67 /* FilterView.swift in Sources */,
