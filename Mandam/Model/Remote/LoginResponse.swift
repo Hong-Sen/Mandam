@@ -6,3 +6,16 @@
 //
 
 import Foundation
+
+struct LoginResponse: Codable {
+    var message: String?
+    var data: String?
+}
+
+/*
+ response
+ {
+ message: "hello"
+ data: "dfijsfhjkdhfhdsjf"
+ }
+ */
