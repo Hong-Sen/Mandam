@@ -16,6 +16,9 @@ target 'Mandam' do
   
   # Facebook login
   pod 'FBSDKLoginKit'
+
+  # Google login
+  pod 'GoogleSignIn'
   
   # Realm DB
   pod 'RealmSwift', '~>10'
