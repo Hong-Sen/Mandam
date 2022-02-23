@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+struct RegisterResponse: Codable {
+    var message: String?
+    var data: String?
+}

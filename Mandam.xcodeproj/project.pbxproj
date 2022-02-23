@@ -27,6 +27,12 @@
 		749531AD27B6C55F0017FC67 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749531AC27B6C55F0017FC67 /* User.swift */; };
 		749531AF27B6C7D30017FC67 /* SelectedFilters+Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749531AE27B6C7D30017FC67 /* SelectedFilters+Enum.swift */; };
 		749531B227B8E6A40017FC67 /* UserLoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749531B127B8E6A40017FC67 /* UserLoginManager.swift */; };
+		749531B727BB88DB0017FC67 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749531B627BB88DB0017FC67 /* API.swift */; };
+		749531B927BBBF7C0017FC67 /* Repositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749531B827BBBF7C0017FC67 /* Repositories.swift */; };
+		749531BB27BBC0850017FC67 /* HTTPStatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749531BA27BBC0850017FC67 /* HTTPStatusCode.swift */; };
+		749531BF27BBC7FF0017FC67 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749531BE27BBC7FF0017FC67 /* LoginResponse.swift */; };
+		749531C127BBC99D0017FC67 /* RegisterResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749531C027BBC99D0017FC67 /* RegisterResponse.swift */; };
+		749531C327BBCEBA0017FC67 /* ProfileResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749531C227BBCEBA0017FC67 /* ProfileResponse.swift */; };
 		74D8E33D27B559CF00D17D14 /* ColorHex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D8E33C27B559CF00D17D14 /* ColorHex.swift */; };
 		F22FC54E0CBB1EC5098384C3 /* Pods_Mandam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC58D078E0CA503F3C352DAD /* Pods_Mandam.framework */; };
 /* End PBXBuildFile section */
@@ -53,6 +59,12 @@
 		749531AC27B6C55F0017FC67 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		749531AE27B6C7D30017FC67 /* SelectedFilters+Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SelectedFilters+Enum.swift"; sourceTree = "<group>"; };
 		749531B127B8E6A40017FC67 /* UserLoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLoginManager.swift; sourceTree = "<group>"; };
+		749531B627BB88DB0017FC67 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		749531B827BBBF7C0017FC67 /* Repositories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repositories.swift; sourceTree = "<group>"; };
+		749531BA27BBC0850017FC67 /* HTTPStatusCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPStatusCode.swift; sourceTree = "<group>"; };
+		749531BE27BBC7FF0017FC67 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		749531C027BBC99D0017FC67 /* RegisterResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterResponse.swift; sourceTree = "<group>"; };
+		749531C227BBCEBA0017FC67 /* ProfileResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileResponse.swift; sourceTree = "<group>"; };
 		74C4631427A65BAE0005852C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		74D8E33C27B559CF00D17D14 /* ColorHex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorHex.swift; sourceTree = "<group>"; };
 		AC58D078E0CA503F3C352DAD /* Pods_Mandam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mandam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -175,8 +187,8 @@
 		7495318E27B6C28E0017FC67 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				7495318F27B6C28E0017FC67 /* KakaoLoginBtn.swift */,
 				7495319027B6C28E0017FC67 /* LoginView.swift */,
+				7495318F27B6C28E0017FC67 /* KakaoLoginBtn.swift */,
 				7495319127B6C28E0017FC67 /* FBLoginBtn.swift */,
 			);
 			path = Login;
@@ -195,6 +207,7 @@
 		749531AA27B6C55F0017FC67 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				749531BC27BBC7ED0017FC67 /* Remote */,
 				749531AB27B6C55F0017FC67 /* Realm */,
 				749531AE27B6C7D30017FC67 /* SelectedFilters+Enum.swift */,
 			);
@@ -212,9 +225,38 @@
 		749531B027B8E6910017FC67 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				749531B527BB88D20017FC67 /* Remote */,
 				749531B127B8E6A40017FC67 /* UserLoginManager.swift */,
 			);
 			path = Modules;
+			sourceTree = "<group>";
+		};
+		749531B527BB88D20017FC67 /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				749531B627BB88DB0017FC67 /* API.swift */,
+				749531B827BBBF7C0017FC67 /* Repositories.swift */,
+				749531BA27BBC0850017FC67 /* HTTPStatusCode.swift */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		749531BC27BBC7ED0017FC67 /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				749531BD27BBC7F20017FC67 /* Auth */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		749531BD27BBC7F20017FC67 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				749531BE27BBC7FF0017FC67 /* LoginResponse.swift */,
+				749531C027BBC99D0017FC67 /* RegisterResponse.swift */,
+				749531C227BBCEBA0017FC67 /* ProfileResponse.swift */,
+			);
+			name = Auth;
 			sourceTree = "<group>";
 		};
 		74D8E33B27B559CF00D17D14 /* Extension */ = {
@@ -353,23 +395,29 @@
 			files = (
 				74213AE32793175700596410 /* MandamApp.swift in Sources */,
 				7495319927B6C28E0017FC67 /* SettingView.swift in Sources */,
+				749531BF27BBC7FF0017FC67 /* LoginResponse.swift in Sources */,
 				749531A327B6C28E0017FC67 /* ConversationRowView.swift in Sources */,
 				749531AF27B6C7D30017FC67 /* SelectedFilters+Enum.swift in Sources */,
 				7495319D27B6C28E0017FC67 /* ContentView.swift in Sources */,
 				749531A227B6C28E0017FC67 /* ConversationRowSubView.swift in Sources */,
 				749531A027B6C28E0017FC67 /* FBLoginBtn.swift in Sources */,
 				7495319B27B6C28E0017FC67 /* AddOpinionView.swift in Sources */,
+				749531BB27BBC0850017FC67 /* HTTPStatusCode.swift in Sources */,
 				749531B227B8E6A40017FC67 /* UserLoginManager.swift in Sources */,
 				749531AD27B6C55F0017FC67 /* User.swift in Sources */,
 				7495319C27B6C28E0017FC67 /* CommunityView.swift in Sources */,
+				749531C327BBCEBA0017FC67 /* ProfileResponse.swift in Sources */,
 				7495319827B6C28E0017FC67 /* FilterView.swift in Sources */,
 				74D8E33D27B559CF00D17D14 /* ColorHex.swift in Sources */,
 				7495319727B6C28E0017FC67 /* SearchBar.swift in Sources */,
+				749531B727BB88DB0017FC67 /* API.swift in Sources */,
 				7495319A27B6C28E0017FC67 /* CommunityRowView.swift in Sources */,
 				7495319627B6C28E0017FC67 /* SocialLoginBtn.swift in Sources */,
 				7495319E27B6C28E0017FC67 /* KakaoLoginBtn.swift in Sources */,
 				7495319F27B6C28E0017FC67 /* LoginView.swift in Sources */,
+				749531C127BBC99D0017FC67 /* RegisterResponse.swift in Sources */,
 				749531A127B6C28E0017FC67 /* ConversationView.swift in Sources */,
+				749531B927BBBF7C0017FC67 /* Repositories.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
