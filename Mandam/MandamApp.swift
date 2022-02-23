@@ -55,7 +55,7 @@ struct MandamApp: SwiftUI.App {
                         UIApplication.shared,
                         open: url,
                         sourceApplication: nil,
-                        annotation: UIApplication.OpenURLOptionsKey.annotation
+                        annotation: [UIApplication.OpenURLOptionsKey.annotation]
                     )) {
                     }
                     // Google

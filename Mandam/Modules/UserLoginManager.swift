@@ -7,6 +7,7 @@
 
 import Foundation
 import KakaoSDKUser
+import FBSDKLoginKit
 import Alamofire
 import RealmSwift
 
@@ -74,8 +75,56 @@ final class UserLoginManager: NSObject {
         }
     }
     
-    // 서버 로그인
     // 서버 레지스터
+    func doServerRegister(type: LoginType, token: String) {
+        Repositories.shared.registerWithSocialToken(type: type, token: token) { status, registerResponse in
+            switch status {
+            case .ok:
+                if let jwtToken = registerResponse?.data {
+                    self.setUser(jwtToken: jwtToken, loginType: type)
+                     self.getUserProfile()
+                }
+        
+            case .conflict: // 회원가입하려는데 이미 유저정보가 존재함 -> 로그인 진행
+                self.doServerRegister(type: type, token: token)
+            default:
+                break
+            }
+        }
+    }
+    
+    // 서버 로그인
+    func doServerLogin(type: LoginType, token: String) {
+        Repositories.shared.loginWithSocialToken(type: type, token: token) { status, LoginResponse in
+            switch status {
+            case .ok: // 로그인 성공
+                if let jwtToken = LoginResponse?.data {
+                    self.setUser(jwtToken: jwtToken, loginType: type)
+                         self.getUserProfile()
+                }
+            default:
+                break
+            }
+        }
+    }
+
+    func getUserProfile() {
+        Repositories.shared.fetchProfileInfo { status, profileResponse in
+            switch status {
+            case .ok:
+                if let userInfo = profileResponse?.data {
+                    self.setUser(
+                        profileImage: userInfo.profileImage,
+                        name: userInfo.userName,
+                        email: userInfo.email
+                    )
+                }
+            default:
+                break
+            }
+        }
+    }
+    
     
     func deleteUser() {
         let realm = try! Realm()
@@ -94,7 +143,7 @@ extension UserLoginManager {
                     print(error)
                 }
                 else if let accsessToken = oauthToken?.accessToken {
-                    //
+                    self.doServerRegister(type: .kakao, token: accsessToken)
                 }
             }
         } else {
@@ -103,7 +152,7 @@ extension UserLoginManager {
                     print(error)
                 }
                 else if let accsessToken = oauthToken?.accessToken {
-                    //
+                    self.doServerRegister(type: .kakao, token: accsessToken)
                 }
             }
         }
@@ -121,7 +170,25 @@ extension UserLoginManager {
 
 extension UserLoginManager {
     private func doLoginByFacebook() {
-        //
+        let loginManager = LoginManager()
+        loginManager.logIn(permissions: [], viewController: nil) {result in
+            switch result {
+            case .failed(let error):
+                print(error)
+            case .cancelled:
+                break
+            case .success(granted: _, declined: _, token: let accessToken):
+                if let token = accessToken?.tokenString {
+                    self.doServerRegister(type: .facebook, token: token)
+                }
+            }
+        }
+    }
+    
+    private func doLogoutFacebook() {
+        let loginManager = LoginManager()
+        loginManager.logOut()
+        deleteUser()
     }
 }
 
